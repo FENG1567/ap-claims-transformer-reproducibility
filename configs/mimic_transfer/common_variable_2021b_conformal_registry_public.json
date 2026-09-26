@@ -1,0 +1,47 @@
+{
+  "2021B_accessed_before_run": false,
+  "calibration_partition": "2021B only",
+  "mimic_transfer_conformal_binding": {
+    "bytes": 8345,
+    "path": "<locally supplied restricted artifact>",
+    "sha256": "7ae4d3c1dd32edbb659f1d97eb0f3c6d4ac2ee0c2915996e678b7efd97a5fd9b"
+  },
+  "model_id": "common_variable_only",
+  "model_lock": {
+    "bytes": 3146,
+    "path": "<locally supplied restricted artifact>",
+    "sha256": "598a9f04d915bbf01d035ef3cbafa36aa701f394ef03506963621a06dccee9ee"
+  },
+  "model_or_threshold_selection_on_2021B": false,
+  "selection_partition": "2021A",
+  "stage6": {
+    "conformal_manifest": {
+      "bytes": 19780,
+      "path": "<locally supplied restricted artifact>",
+      "sha256": "28d44fb6bb322c9e824f217f7c5d3ae091dbc4b21cd3ff99de4b409b268a27f5"
+    },
+    "conformal_sets": {
+      "bytes": 1622713,
+      "path": "<locally supplied restricted artifact>",
+      "sha256": "1a01c7f72467793a58df078702740e7dc981b01b53f090a9b8a53e5f80739bb2"
+    },
+    "prediction": {
+      "bytes": 2236015,
+      "path": "<locally supplied restricted artifact>",
+      "sha256": "a6ed80e64899803d873a2fd6d2f527217a22b9634c3e31c2b8e7390563da1ab3"
+    },
+    "prediction_manifest": {
+      "bytes": 1517,
+      "path": "<locally supplied restricted artifact>",
+      "sha256": "d21f15ce5e4533166f8cba2f9a08c119cac34e7e41930be5aba2a84aeff76cd3"
+    },
+    "registry": {
+      "bytes": 1515,
+      "path": "<locally supplied restricted artifact>",
+      "sha256": "bf43359e940bc5c066f88b974e7250609a0f3862923896cf1006e5ee08695dc5"
+    }
+  },
+  "status": "PASS_COMMON_VARIABLE_ONLY_2021B_CONFORMAL_PRE_MIMIC",
+  "year_2022_accessed": false
+}
+

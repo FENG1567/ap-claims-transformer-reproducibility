@@ -1,0 +1,374 @@
+{
+  "algorithm": "CMS Planned Readmission Algorithm Version 4.0",
+  "artifacts": {
+    "algorithm_rules.yml": {
+      "bytes": 1149,
+      "sha256": "b42dc1db8daafa652c25854243fd7f2dadf65598c8c6c7fe82fb3d19c65e7847"
+    },
+    "annual_algorithm_code_sets.parquet": {
+      "bytes": 659690,
+      "sha256": "5f131b0183882bf2db2d9c79d6fb2189a8e5b356910cd60e09aa2b8879e7d917"
+    },
+    "annual_ccs_mapping.parquet": {
+      "bytes": 5455987,
+      "sha256": "6ec4b8580dd03a196f392ba7cd206db9bdc3d12750fcb19467567a7d3fc5246c"
+    },
+    "annual_spec_rows.csv": {
+      "bytes": 11337581,
+      "sha256": "7f3b37a5f1566703104d57a50b48bc27ce3b4737969b4a0a4373ce570b390bf5"
+    }
+  },
+  "qc": {
+    "status_rule": "active unless status starts with remove",
+    "years": {
+      "2018": {
+        "fiscal_years": [
+          2018,
+          2019
+        ],
+        "mapping_codes": {
+          "CM": 72775,
+          "PCS": 80492
+        },
+        "reporting_year": 2020,
+        "tables": {
+          "PR.1": {
+            "active_ccs_categories": 3,
+            "active_direct_codes": 0,
+            "direct_codes_invalid_for_calendar_year": 0,
+            "direct_invalid_examples": [],
+            "expanded_category_codes": 185,
+            "final_valid_codes": 161
+          },
+          "PR.2": {
+            "active_ccs_categories": 2,
+            "active_direct_codes": 0,
+            "direct_codes_invalid_for_calendar_year": 0,
+            "direct_invalid_examples": [],
+            "expanded_category_codes": 40,
+            "final_valid_codes": 40
+          },
+          "PR.3": {
+            "active_ccs_categories": 65,
+            "active_direct_codes": 2254,
+            "direct_codes_invalid_for_calendar_year": 0,
+            "direct_invalid_examples": [],
+            "expanded_category_codes": 45189,
+            "final_valid_codes": 46635
+          },
+          "PR.4": {
+            "active_ccs_categories": 81,
+            "active_direct_codes": 12229,
+            "direct_codes_invalid_for_calendar_year": 31,
+            "direct_invalid_examples": [
+              "I9762",
+              "K522",
+              "K850",
+              "K851",
+              "K852",
+              "K853",
+              "K858",
+              "K859",
+              "K913",
+              "S63131A",
+              "S63132A",
+              "S63133A",
+              "S63134A",
+              "S63135A",
+              "S63136A",
+              "S63141A",
+              "S63142A",
+              "S63143A",
+              "S63144A",
+              "S63145A"
+            ],
+            "expanded_category_codes": 6494,
+            "final_valid_codes": 18621
+          }
+        },
+        "valid_catalog_codes": {
+          "CM": 71983,
+          "PCS": 79097
+        },
+        "valid_codes_missing_from_mapping": {
+          "CM": 0,
+          "PCS": 0
+        }
+      },
+      "2019": {
+        "fiscal_years": [
+          2019,
+          2020
+        ],
+        "mapping_codes": {
+          "CM": 72775,
+          "PCS": 80492
+        },
+        "reporting_year": 2021,
+        "tables": {
+          "PR.1": {
+            "active_ccs_categories": 3,
+            "active_direct_codes": 0,
+            "direct_codes_invalid_for_calendar_year": 0,
+            "direct_invalid_examples": [],
+            "expanded_category_codes": 185,
+            "final_valid_codes": 173
+          },
+          "PR.2": {
+            "active_ccs_categories": 2,
+            "active_direct_codes": 0,
+            "direct_codes_invalid_for_calendar_year": 0,
+            "direct_invalid_examples": [],
+            "expanded_category_codes": 40,
+            "final_valid_codes": 40
+          },
+          "PR.3": {
+            "active_ccs_categories": 65,
+            "active_direct_codes": 2521,
+            "direct_codes_invalid_for_calendar_year": 0,
+            "direct_invalid_examples": [],
+            "expanded_category_codes": 45189,
+            "final_valid_codes": 47078
+          },
+          "PR.4": {
+            "active_ccs_categories": 80,
+            "active_direct_codes": 12333,
+            "direct_codes_invalid_for_calendar_year": 33,
+            "direct_invalid_examples": [
+              "I9762",
+              "K522",
+              "K830",
+              "K850",
+              "K851",
+              "K852",
+              "K853",
+              "K858",
+              "K859",
+              "K913",
+              "S63131A",
+              "S63132A",
+              "S63133A",
+              "S63134A",
+              "S63135A",
+              "S63136A",
+              "S63141A",
+              "S63142A",
+              "S63143A",
+              "S63144A"
+            ],
+            "expanded_category_codes": 6434,
+            "final_valid_codes": 18685
+          }
+        },
+        "valid_catalog_codes": {
+          "CM": 72205,
+          "PCS": 79615
+        },
+        "valid_codes_missing_from_mapping": {
+          "CM": 0,
+          "PCS": 0
+        }
+      },
+      "2020": {
+        "fiscal_years": [
+          2020,
+          2021
+        ],
+        "mapping_codes": {
+          "CM": 73271,
+          "PCS": 81069
+        },
+        "reporting_year": 2022,
+        "tables": {
+          "PR.1": {
+            "active_ccs_categories": 3,
+            "active_direct_codes": 0,
+            "direct_codes_invalid_for_calendar_year": 0,
+            "direct_invalid_examples": [],
+            "expanded_category_codes": 189,
+            "final_valid_codes": 153
+          },
+          "PR.2": {
+            "active_ccs_categories": 2,
+            "active_direct_codes": 0,
+            "direct_codes_invalid_for_calendar_year": 0,
+            "direct_invalid_examples": [],
+            "expanded_category_codes": 40,
+            "final_valid_codes": 40
+          },
+          "PR.3": {
+            "active_ccs_categories": 65,
+            "active_direct_codes": 2540,
+            "direct_codes_invalid_for_calendar_year": 10,
+            "direct_invalid_examples": [
+              "04V03C6",
+              "04V03D6",
+              "04V03E6",
+              "04V03F6",
+              "04V03Z6",
+              "04V04C6",
+              "04V04D6",
+              "04V04E6",
+              "04V04F6",
+              "04V04Z6"
+            ],
+            "expanded_category_codes": 45543,
+            "final_valid_codes": 46978
+          },
+          "PR.4": {
+            "active_ccs_categories": 80,
+            "active_direct_codes": 12413,
+            "direct_codes_invalid_for_calendar_year": 34,
+            "direct_invalid_examples": [
+              "I9762",
+              "K522",
+              "K830",
+              "K850",
+              "K851",
+              "K852",
+              "K853",
+              "K858",
+              "K859",
+              "K913",
+              "S63131A",
+              "S63132A",
+              "S63133A",
+              "S63134A",
+              "S63135A",
+              "S63136A",
+              "S63141A",
+              "S63142A",
+              "S63143A",
+              "S63144A"
+            ],
+            "expanded_category_codes": 6520,
+            "final_valid_codes": 18846
+          }
+        },
+        "valid_catalog_codes": {
+          "CM": 72680,
+          "PCS": 78136
+        },
+        "valid_codes_missing_from_mapping": {
+          "CM": 0,
+          "PCS": 0
+        }
+      },
+      "2021": {
+        "fiscal_years": [
+          2021,
+          2022
+        ],
+        "mapping_codes": {
+          "CM": 73299,
+          "PCS": 80623
+        },
+        "reporting_year": 2023,
+        "tables": {
+          "PR.1": {
+            "active_ccs_categories": 3,
+            "active_direct_codes": 0,
+            "direct_codes_invalid_for_calendar_year": 0,
+            "direct_invalid_examples": [],
+            "expanded_category_codes": 189,
+            "final_valid_codes": 153
+          },
+          "PR.2": {
+            "active_ccs_categories": 2,
+            "active_direct_codes": 0,
+            "direct_codes_invalid_for_calendar_year": 0,
+            "direct_invalid_examples": [],
+            "expanded_category_codes": 40,
+            "final_valid_codes": 40
+          },
+          "PR.3": {
+            "active_ccs_categories": 65,
+            "active_direct_codes": 2637,
+            "direct_codes_invalid_for_calendar_year": 10,
+            "direct_invalid_examples": [
+              "04V03C6",
+              "04V03D6",
+              "04V03E6",
+              "04V03F6",
+              "04V03Z6",
+              "04V04C6",
+              "04V04D6",
+              "04V04E6",
+              "04V04F6",
+              "04V04Z6"
+            ],
+            "expanded_category_codes": 45218,
+            "final_valid_codes": 47173
+          },
+          "PR.4": {
+            "active_ccs_categories": 82,
+            "active_direct_codes": 11224,
+            "direct_codes_invalid_for_calendar_year": 8,
+            "direct_invalid_examples": [
+              "K830",
+              "T404X1A",
+              "T404X2A",
+              "T404X3A",
+              "T404X4A",
+              "T404X6A",
+              "T670XXA",
+              "T814XXA"
+            ],
+            "expanded_category_codes": 8667,
+            "final_valid_codes": 19767
+          }
+        },
+        "valid_catalog_codes": {
+          "CM": 72780,
+          "PCS": 78334
+        },
+        "valid_codes_missing_from_mapping": {
+          "CM": 0,
+          "PCS": 0
+        }
+      }
+    }
+  },
+  "sealed_year": 2022,
+  "sources": {
+    "work\\reference\\CMS_2021_HWR_supplement\\2021_HWR.xlsx": {
+      "bytes": 10473425,
+      "sha256": "be46761bbec5a13d25158185bafd5b92685c6603b70cc0978aba5e346e8d24f3"
+    },
+    "work\\reference\\CMS_2021_HWR_supplement\\YaleModified_CCS_PCS_CM_Map_v2020_final508.xlsx": {
+      "bytes": 5823390,
+      "sha256": "f490f7764246c3a9c02a142a9a8aa28f980e4a302aae5f51b57c50c0a69d23f0"
+    },
+    "work\\reference\\CMS_annual_HWR\\2020_HWR_SuppFile.xlsx": {
+      "bytes": 781555,
+      "sha256": "8c62c681d5c784c863d7fb63bf29f4d666952b93ba8b785b96cbcaf0c2077660"
+    },
+    "work\\reference\\CMS_annual_HWR\\2022_HWR (3).xlsx": {
+      "bytes": 788218,
+      "sha256": "47495f2a497fde732e6457fa8d016a1d9240646899fe037baa22e42b9f606b19"
+    },
+    "work\\reference\\CMS_annual_HWR\\2023_HWR_v1.0.xlsx": {
+      "bytes": 792507,
+      "sha256": "804764178c54c6ac5150a42c87e2325e7246f1971b9f0b9230659bb4dddf947b"
+    },
+    "work\\reference\\CMS_annual_HWR\\YaleMod_CCS_CM_PCS_Map_for_2023_Reporting_External_9.29.22.xlsx": {
+      "bytes": 5698525,
+      "sha256": "0f0c87a28216607b1cf7556592d120676c7dabe396bccfad21dab90f922bbf48"
+    },
+    "work\\reference\\CMS_annual_HWR\\YaleMod_CCS_PCS_CM_Map_for_2022-external_v1.0.xlsx": {
+      "bytes": 5722759,
+      "sha256": "befa562340092cc01cba4c22618aab8ad5e80a0a60338e1d8f59a539714d9303"
+    },
+    "work\\reference\\official_icd10_catalog_fy2018_2023.parquet": {
+      "bytes": 15252120,
+      "sha256": "d6193b186c4dc38ad26beb62e564c18e3dc964d2804122cfcf2a8baf992c708f"
+    }
+  },
+  "status": "PASS",
+  "years_locked": [
+    2018,
+    2019,
+    2020,
+    2021
+  ]
+}

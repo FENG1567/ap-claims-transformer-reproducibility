@@ -1,0 +1,245 @@
+{
+  "lock_version": "1.0.0",
+  "created_date": "2026-09-13",
+  "status": "LOCKED_METHOD_PRE_FORMAL_MIMIC_ANALYSIS_PENDING_MODEL_BINDINGS",
+  "scientific_role": "Restricted cross-domain transportability analysis of the frozen NRD common-variable-only model; not national claims validation.",
+  "stage0_aggregate_quarantine": {
+    "status": "QUARANTINED_FEASIBILITY_ONLY",
+    "rule": "Previously generated coarse MIMIC counts and unplanned-status-unfiltered readmission rates may justify feasibility only. They may not select eligibility rules, models, features, calibration, thresholds, ontology, endpoints, subgroups, or reporting cutoffs.",
+    "source": "outputs/stage0_feasibility_report.md"
+  },
+  "source": {
+    "database": "MIMIC-IV 3.1",
+    "archive": "<locally supplied restricted artifact>",
+    "archive_bytes": 10551747784,
+    "required_members": [
+      "mimic-iv-3.1/hosp/admissions.csv.gz",
+      "mimic-iv-3.1/hosp/patients.csv.gz",
+      "mimic-iv-3.1/hosp/diagnoses_icd.csv.gz",
+      "mimic-iv-3.1/hosp/procedures_icd.csv.gz"
+    ],
+    "qa_only_members": [
+      "mimic-iv-3.1/hosp/drgcodes.csv.gz",
+      "mimic-iv-3.1/hosp/services.csv.gz",
+      "mimic-iv-3.1/hosp/transfers.csv.gz",
+      "mimic-iv-3.1/icu/icustays.csv.gz"
+    ],
+    "archive_sha256": "0dd448e341f489483194daafd884607d6f194648c6bf54eed56d1e2cd2af9e09",
+    "required_member_identities": {
+      "mimic-iv-3.1/hosp/admissions.csv.gz": {
+        "bytes": 19928140,
+        "compressed_bytes": 19931279,
+        "crc32": "f8f39b8b",
+        "sha256": "a9584ed88e9ed664a2f66f86a5cf9fd175c8bb0af50e3b6115598b19e978384e"
+      },
+      "mimic-iv-3.1/hosp/patients.csv.gz": {
+        "bytes": 2835586,
+        "compressed_bytes": 2835103,
+        "crc32": "ecb402e9",
+        "sha256": "4c7507de7ecad8c5ba7647ea4d26018e88ff6672c5fc22ab59c2a5697d687cdd"
+      },
+      "mimic-iv-3.1/hosp/diagnoses_icd.csv.gz": {
+        "bytes": 33564802,
+        "compressed_bytes": 33570077,
+        "crc32": "cb6fe43b",
+        "sha256": "47665a41b2a3ad990d6f314062d5bd6d29d467b0fd402dd94662044ec8b073d2"
+      },
+      "mimic-iv-3.1/hosp/procedures_icd.csv.gz": {
+        "bytes": 7777324,
+        "compressed_bytes": 7715540,
+        "crc32": "8dc8c554",
+        "sha256": "3271397d0517131f84399b698cbb0c2f435aaab0f873a3806e13b097661596f7"
+      }
+    },
+    "qa_only_member_identities": {
+      "mimic-iv-3.1/hosp/drgcodes.csv.gz": {
+        "bytes": 9743908,
+        "compressed_bytes": 9745393,
+        "crc32": "a0db7b64",
+        "sha256": "60aceace5f1291a81441ca1004891334b89526f1a8ac7cc8bc12da632e7e6087"
+      },
+      "mimic-iv-3.1/hosp/services.csv.gz": {
+        "bytes": 8569241,
+        "compressed_bytes": 8570551,
+        "crc32": "031e30cd",
+        "sha256": "31c82ebee94e0c04d6966fbfec30579ec00f9c7816b80852f9580656e6183888"
+      },
+      "mimic-iv-3.1/hosp/transfers.csv.gz": {
+        "bytes": 46185771,
+        "compressed_bytes": 46151938,
+        "crc32": "2c168f55",
+        "sha256": "4ea296ddafb4fa51d31319c1eaa330dac975e4d50ddb2ba98783c05476488db2"
+      },
+      "mimic-iv-3.1/icu/icustays.csv.gz": {
+        "bytes": 3342355,
+        "compressed_bytes": 3342865,
+        "crc32": "963d42ae",
+        "sha256": "3c590ed37f1fb7a77a128f2f6961f836001512ba81adcd0dfeced2702f96bc5f"
+      }
+    }
+  },
+  "upstream_method_bindings": {
+    "stage2_analysis_lock_sha256": "d87e13255781cfc52623757abb5546c771053b554419a62a887605ae11ee1b86",
+    "ontology_icd_ccsr_labels_sha256": "ed645739cf01ade16042c532b25a6114e50e8dc530e0ceb3d205d8e7f1e1fc86",
+    "ontology_priority_rules_sha256": "bf8c60b4ec0fd7abc8ba823dd0a26d4c1fcee44f79238decdc4b83538d197888",
+    "ontology_hierarchy_sha256": "71ed8f18b5d0036a1b47cad9c658be6fc1560af94af96d490667088a96c4f472",
+    "planned_readmission_2018_2021_lock_sha256": "e1e682fea14da07e5b9ac531be13859781b7f8ad277bfdc1d6e73509aca64fa1",
+    "planned_readmission_2022_lock_sha256": "8ad5391afb31c72aa54b41875cac0d458b05182fe02f3140ae464683b8855010"
+  },
+  "population": {
+    "unit": "eligible AP index episode",
+    "age_rule": "admission_age >= 18, derived as anchor_age + admission_year - anchor_year; nonfinite or implausible values outside 18-120 are excluded",
+    "primary_ap_rule": "principal diagnosis seq_num=1, icd_version=10, normalized code starts with K85",
+    "alive_discharge_rule": "hospital_expire_flag=0 and no in-hospital death before episode discharge",
+    "timestamp_rule": "subject_id and hadm_id present; admittime and dischtime valid; dischtime >= admittime",
+    "multiple_indices": "retain all nonduplicate eligible index episodes; uncertainty intervals resample subject_id so repeated episodes remain clustered",
+    "icd9_sensitivity": "ICD-9 principal 5770 may be evaluated only as a separately labelled sensitivity analysis after the primary result is frozen; it cannot alter the primary model or conclusion"
+  },
+  "episode_construction": {
+    "sort_key": [
+      "subject_id",
+      "admittime",
+      "dischtime",
+      "hadm_id"
+    ],
+    "primary_transfer_collapse": "Collapse overlapping admissions and admissions separated by <=24 hours when either the prior discharge_location denotes transfer to another acute hospital or the next admission_location denotes transfer from another hospital. Resolve chains transitively.",
+    "overlap_rule": "Always collapse when next admittime <= current episode dischtime.",
+    "sensitivity_transfer_collapse": "Collapse every same-day or <=24-hour gap regardless of transfer labels.",
+    "index_definition_after_collapse": "An episode is an AP index when at least one component has principal ICD-10-CM K85; the earliest such component defines the index anchor. Features may use only information recorded by the final discharge of the collapsed episode.",
+    "deduplication": "Within an episode, deduplicate diagnosis and procedure records by normalized code, version, sequence, and procedure date before deterministic ordering."
+  },
+  "prediction_anchor_and_history": {
+    "anchor": "final discharge time of the collapsed AP index episode",
+    "history": "only earlier same-system MIMIC admissions ending before the index episode begins",
+    "future_exclusion": "the index episode's future admissions, all post-discharge records, and any later outcome information are prohibited from predictors",
+    "observability": "history flags describe availability within MIMIC only and never imply observation outside the health system",
+    "calendar_year_embedding": "DISABLED",
+    "vocabulary": "frozen NRD development vocabulary; no MIMIC token may expand or reorder it",
+    "unsupported_codes": "unsupported or unseen codes map to the frozen OOV representation and are counted in an immutable OOV audit"
+  },
+  "readmission_window": {
+    "start": ">0 hours after index episode discharge",
+    "end": "<=30 days after index episode discharge",
+    "candidate": "subsequent inpatient MIMIC episode for the same subject_id after transfer collapsing",
+    "endpoint_wording": "30-day same-system readmission",
+    "noncapture_rule": "absence of a recorded MIMIC readmission is interpreted only as no recorded same-system readmission; it is not evidence of no hospitalization elsewhere"
+  },
+  "planned_readmission_under_shifted_dates": {
+    "problem": "MIMIC dates are shifted at patient level, so the displayed calendar year cannot select the true annual CMS Planned Readmission Algorithm mapping.",
+    "annual_rule_sets": [
+      2018,
+      2019,
+      2020,
+      2021,
+      2022
+    ],
+    "procedure_scope": "all procedure positions for PRA PR.1/PR.3",
+    "diagnosis_scope": "principal diagnosis only for PRA PR.2/PR.4",
+    "stable_planned": "all five annual rule sets classify the candidate as planned",
+    "stable_unplanned": "all five annual rule sets classify the candidate as unplanned",
+    "algorithm_unknown": "annual classifications disagree, a required mapping is missing, the principal diagnosis is absent or unsupported, or required procedure information is not classifiable",
+    "candidate_selection": "skip stable-planned candidates. The first stable-unplanned candidate is the qualifying readmission only if no earlier algorithm_unknown candidate occurred in the 30-day window.",
+    "unknown_precedence": "an algorithm_unknown candidate before the first stable-unplanned candidate, or any algorithm_unknown candidate when no stable-unplanned candidate exists, makes the index episode's primary planned-status-dependent label algorithm_unknown",
+    "primary_handling": "exclude algorithm_unknown index episodes from planned-status-dependent primary performance denominators",
+    "required_bounds": "report two extreme sensitivity bounds: treat every algorithm_unknown candidate as planned, and treat every algorithm_unknown candidate as unplanned",
+    "elective_proxy": "admission_type-based elective exclusion is sensitivity-only and cannot replace the five-rule consensus classification"
+  },
+  "cause_hierarchy": {
+    "source": "principal diagnosis of the first qualifying stable-unplanned readmission",
+    "priority": [
+      "AP_specific",
+      "biliary",
+      "sepsis_or_acute_organ_dysfunction",
+      "other"
+    ],
+    "mutually_exclusive": true,
+    "parent_invariant": "qualifying readmission equals the union of the four primary leaves",
+    "cause_unknown": "if a qualifying readmission has an absent, ICD-9-only, or otherwise unsupported principal diagnosis, retain any-readmission positivity but mark all cause-specific labels unknown and exclude them from cause-specific denominators",
+    "all_position_multilabel": "sensitivity-only and may overlap; it cannot replace the primary hierarchy"
+  },
+  "permitted_endpoints": [
+    "any qualifying 30-day same-system readmission",
+    "AP-specific 30-day same-system readmission",
+    "biliary 30-day same-system readmission",
+    "sepsis or acute-organ-dysfunction 30-day same-system readmission",
+    "prolonged length of stay using the frozen NRD threshold LOS > 7 days",
+    "in-hospital death"
+  ],
+  "prohibited_endpoints_and_claims": [
+    "cost or high-cost validation",
+    "ZIP-income validation",
+    "survey-weighted or nationally representative estimates",
+    "hospital-structure transport validation",
+    "APR-DRG transport validation",
+    "complete capture of readmissions outside the MIMIC health system"
+  ],
+  "model_and_calibration": {
+    "model": "the frozen NRD common_variable_only Transformer selected without MIMIC data",
+    "probability_calibration": "apply the calibration method and parameters frozen on 2021A; no MIMIC recalibration",
+    "conformal": "apply the 2021B-only frozen conformal thresholds without MIMIC recalibration",
+    "thresholds": "apply the 2021A frozen operating points; no MIMIC threshold optimization",
+    "required_pending_bindings": [
+      "common_variable_only final checkpoint SHA256 and bytes",
+      "preprocessing-state SHA256 and bytes",
+      "2021A calibration and operating-point manifest SHA256",
+      "2021B conformal manifest SHA256",
+      "frozen diagnosis and procedure vocabulary SHA256 values"
+    ]
+  },
+  "evaluation": {
+    "primary_metrics": [
+      "AUROC",
+      "AUPRC with outcome prevalence",
+      "Brier score",
+      "log loss",
+      "calibration intercept",
+      "calibration slope"
+    ],
+    "clinical_utility": "decision-curve net benefit at the NRD-locked thresholds with treat-all and treat-none references",
+    "uncertainty": "1000 subject_id-cluster bootstrap replicates with percentile 95% confidence intervals; never resample episodes independently",
+    "conformal_metrics": [
+      "marginal coverage",
+      "mean and median set size",
+      "singleton rate",
+      "empty-set rate",
+      "full-set rate",
+      "abstention rate",
+      "error rates among retained and abstained episodes"
+    ],
+    "metric_event_gates": {
+      "AUROC_AUPRC_Brier_log_loss": "report with confidence intervals only when both outcome classes have >=20 episodes; otherwise descriptive only",
+      "calibration_intercept_slope_and_DCA": "confirmatory only with >=100 events and >=100 non-events; otherwise exploratory with explicit instability warning",
+      "subgroup_conformal_coverage": ">=100 target events confirmatory, 50-99 exploratory, <50 descriptive only",
+      "rare_endpoint": "do not report a model-performance estimate when a resample or estimand is undefined; report the event count and suppress inferential language"
+    }
+  },
+  "subgroups": {
+    "confirmatory": [
+      "sex",
+      "age group"
+    ],
+    "excluded_from_cross_domain_claims": [
+      "payer or insurance",
+      "ZIP-income quartile",
+      "hospital structure"
+    ],
+    "rule": "No MIMIC subgroup may be selected, merged, or dropped based on observed coverage or performance."
+  },
+  "artifact_and_release_rules": {
+    "prediction_unit": "one immutable row per eligible index episode with subject_id retained only in the restricted analysis artifact",
+    "manifest": "record row count, field schema, source/member hashes, upstream model hashes, code hashes, created time, and patient-level prediction SHA256",
+    "public_release": "no row-level MIMIC data, identifiers, embeddings, or predictions; release only code, synthetic examples, and disclosure-safe aggregate results permitted by the PhysioNet agreement",
+    "result_suppression": "apply HCUP n<=10 suppression to any combined public table containing NRD results; use the same conservative display rule for MIMIC cells for consistency"
+  },
+  "execution_gates": [
+    "all pending model and vocabulary bindings are present and hash-verified",
+    "archive and required member identities are hash-bound",
+    "formal ETL code and no-data tests pass",
+    "the implementation proves that future encounters cannot enter index-time features",
+    "the implementation proves that MIMIC cannot expand the frozen NRD vocabulary",
+    "the five-year PRA consensus and unknown-precedence rules are covered by tests",
+    "formal cohort and outcome summaries are generated once from the locked implementation",
+    "predictions and evaluation are emitted with immutable manifests"
+  ]
+}
+

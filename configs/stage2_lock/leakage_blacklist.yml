@@ -1,0 +1,27 @@
+version: 1.0.0
+status: LOCKED_PRE_2022
+global_forbidden:
+  - direct_or_derived_future_encounter_labels
+  - cross_year_patient_linkage
+  - 2022_statistics_in_vocabulary_preprocessing_model_selection_calibration_or_thresholds
+  - 2021B_in_model_or_threshold_selection
+  - identifiers_except_year_salted_nonreversible_group_hashes
+readmission_at_discharge_forbidden:
+  - next_admission_date_or_diagnoses_or_procedures
+  - label_category_or_time_to_readmission
+  - statistics_fit_on_2021B_or_2022
+admission_time_auxiliary_forbidden:
+  - LOS
+  - TOTCHG
+  - CCR_adjusted_cost
+  - DIED
+  - DISPUNIFORM
+  - discharge_destination
+  - procedures_after_locked_early_window
+  - diagnoses_documented_only_after_locked_early_window
+split_controls:
+  training_and_pretraining: 2018-2020
+  model_selection: 2021A_patient_hash_split
+  conformal_calibration_only: 2021B_patient_hash_split
+  temporal_test_once: 2022
+  patient_overlap_across_2021A_2021B: forbidden

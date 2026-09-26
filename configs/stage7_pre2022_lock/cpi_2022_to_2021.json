@@ -1,0 +1,14 @@
+{
+  "status": "LOCKED_PRE_2022_TEST_ACCESS",
+  "series_id": "CUUR0000SA0",
+  "series_name": "Consumer Price Index for All Urban Consumers: All Items in U.S. City Average",
+  "source": "U.S. Bureau of Labor Statistics Public Data API v2",
+  "source_url": "https://api.bls.gov/publicAPI/v2/timeseries/data/",
+  "base_year": 2021,
+  "base_year_annual_average": 270.970,
+  "source_year": 2022,
+  "source_year_annual_average": 292.655,
+  "cpi_to_2021_factor": 0.9259025131981345,
+  "retrieved_date": "2026-09-13",
+  "nrd_2022_accessed": false
+}

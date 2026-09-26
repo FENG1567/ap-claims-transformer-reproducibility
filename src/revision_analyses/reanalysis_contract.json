@@ -1,0 +1,37 @@
+{
+  "created_for": "IJMI pre-submission revision",
+  "version": "ijmi_revision_v4_20260921",
+  "status": "LOCKED_POST_UNBLINDING_REANALYSIS_SPEC",
+  "post_unblinding": true,
+  "allowed": [
+    "independent 2018-2022 cohort reconstruction audit",
+    "design-aware uncertainty intervals on frozen 2022 predictions",
+    "simultaneous inference for two co-primary AUPRC comparisons",
+    "paired exploratory intervals for frozen Transformer ablations",
+    "calibration, subgroup, operating-characteristic and DCA summaries",
+    "first-index and dependence-structure sensitivity analyses",
+    "restricted MIMIC subject-bootstrap, OOV and subgroup summaries",
+    "post-hoc frozen common-variable baseline transport to MIMIC"
+  ],
+  "forbidden": [
+    "using 2022 or MIMIC outcomes to change a model or feature",
+    "using 2022 or MIMIC outcomes to change calibration or thresholds",
+    "using 2022 or MIMIC outcomes to change ontology or endpoint mapping",
+    "overwriting any prior frozen or audit artifact",
+    "claiming complete capture of readmissions outside MIMIC"
+  ],
+  "primary_resampling": {
+    "replicates": 5000,
+    "scheme": "paired hospitals-within-NRD_STRATUM bootstrap",
+    "co_primary_control": "max-T simultaneous 95% intervals"
+  },
+  "secondary_resampling": {
+    "replicates": 1000,
+    "uses": [
+      "calibration and operating metrics",
+      "paired Transformer ablations",
+      "patient-cluster and cross-classified sensitivity analyses"
+    ]
+  },
+  "review": "post-unblinding additive analysis; no model adaptation"
+}

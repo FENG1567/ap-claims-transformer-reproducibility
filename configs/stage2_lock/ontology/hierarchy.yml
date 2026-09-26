@@ -1,0 +1,30 @@
+version: 1.0.0
+status: LOCKED_PRE_2022
+root: thirty_day_outcome
+nodes:
+  - id: no_unplanned_readmission
+    parent: thirty_day_outcome
+    mutually_exclusive_primary: true
+  - id: readmission
+    parent: thirty_day_outcome
+    mutually_exclusive_primary: true
+  - id: readmission.ap_specific
+    parent: readmission
+    mutually_exclusive_primary: true
+  - id: readmission.biliary_event
+    parent: readmission
+    mutually_exclusive_primary: true
+  - id: readmission.sepsis_or_acute_organ_dysfunction
+    parent: readmission
+    mutually_exclusive_primary: true
+  - id: readmission.other
+    parent: readmission
+    mutually_exclusive_primary: true
+secondary_multilabel:
+  source: all_diagnosis_positions_of_first_qualifying_readmission
+  overlap_allowed: true
+  never_substitutes_for: principal_diagnosis_mutually_exclusive_primary
+closure_rules:
+  - readmission_equals_union_of_four_child_causes
+  - every_patient_has_exactly_one_primary_leaf
+  - every_predicted_risk_set_is_ancestor_closed

@@ -1,0 +1,200 @@
+{
+  "bindings": {
+    "adapter": {
+      "bytes": 27085,
+      "path": "<locally supplied restricted artifact>",
+      "sha256": "ce8d97545f5f214f394ddaff086e1ca0ae90db67f6b498e7e49afd9e75868333"
+    },
+    "calibrators": {
+      "bytes": 189,
+      "path": "<locally supplied restricted artifact>",
+      "sha256": "0932551972498609f48c73496b9965a426612167bb487799a9531a9633299130"
+    },
+    "checkpoint": {
+      "bytes": 457446846,
+      "path": "<locally supplied restricted artifact>",
+      "sha256": "e4680d697f303574ab946e6f7e6fcdc32409a46ca8e603d1f264ed8aa5c62efe"
+    },
+    "common_variable_model_lock": {
+      "bytes": 3146,
+      "path": "<locally supplied restricted artifact>",
+      "sha256": "598a9f04d915bbf01d035ef3cbafa36aa701f394ef03506963621a06dccee9ee"
+    },
+    "conformal_binding": {
+      "bytes": 8345,
+      "path": "<locally supplied restricted artifact>",
+      "sha256": "7ae4d3c1dd32edbb659f1d97eb0f3c6d4ac2ee0c2915996e678b7efd97a5fd9b"
+    },
+    "conformal_registry": {
+      "bytes": 2710,
+      "path": "<locally supplied restricted artifact>",
+      "sha256": "d68567bec579fee969e61bb080bb3614803f92468c612cff788560ee7f110330"
+    },
+    "dx_vocabulary": {
+      "bytes": 2208540,
+      "path": "<locally supplied restricted artifact>",
+      "sha256": "b890639fea65b18da16c5bd98801eeb5f3c09510fb098fa0b90ab2efdab5c74d"
+    },
+    "finetune_manifest": {
+      "bytes": 8124,
+      "path": "<locally supplied restricted artifact>",
+      "sha256": "13c5271a70df4761764e2a681d5e1cd0db1d66d82cc4e544268c72dc39e52018"
+    },
+    "hierarchy_arrays": {
+      "bytes": 199840,
+      "path": "<locally supplied restricted artifact>",
+      "sha256": "edb1f44b782fd4a9a70f7167007c14eccb7facbfe5706c3098ac995567778bc7"
+    },
+    "hierarchy_vocabularies": {
+      "bytes": 17011,
+      "path": "<locally supplied restricted artifact>",
+      "sha256": "0708ecfeb75f004a3522195cc67b3eaa1f2ce078b76db14dd891fd540eedcaf5"
+    },
+    "ontology_labels": {
+      "bytes": 48570,
+      "path": "<locally supplied restricted artifact>",
+      "sha256": "ed645739cf01ade16042c532b25a6114e50e8dc530e0ceb3d205d8e7f1e1fc86"
+    },
+    "operating_manifest": {
+      "bytes": 3693,
+      "path": "<locally supplied restricted artifact>",
+      "sha256": "d3ac1fc03e339a1ffadd0dd34cdbb77bd1eba56fae3d6ee96c68ee7994a62cf5"
+    },
+    "pr_vocabulary": {
+      "bytes": 2205352,
+      "path": "<locally supplied restricted artifact>",
+      "sha256": "bc478bd8729adc33915468a4452a87474590baa8e52770bad02d21065e07e9bb"
+    },
+    "pra_2022_lock": {
+      "bytes": 6180,
+      "path": "<locally supplied restricted artifact>",
+      "sha256": "8ad5391afb31c72aa54b41875cac0d458b05182fe02f3140ae464683b8855010"
+    },
+    "stage2_pra_lock": {
+      "bytes": 11450,
+      "path": "<locally supplied restricted artifact>",
+      "sha256": "e1e682fea14da07e5b9ac531be13859781b7f8ad277bfdc1d6e73509aca64fa1"
+    },
+    "thresholds": {
+      "bytes": 1513,
+      "path": "<locally supplied restricted artifact>",
+      "sha256": "69e6186e9349764e8b0010bde358de056ad424ada08037aad83a8960be405323"
+    }
+  },
+  "contract": {
+    "calibration_partition": "2021A",
+    "conformal_partition": "2021B",
+    "mimic_fit": false,
+    "mimic_recalibration": false,
+    "mimic_threshold_optimization": false,
+    "projection": "common_variable_only",
+    "vocabulary_growth": false
+  },
+  "evaluation": {
+    "coverages": [
+      0.8,
+      0.9,
+      0.95
+    ],
+    "endpoints": {
+      "any_readmission": {
+        "partition": "2021A",
+        "probability_field": "p_any_readmission_calibrated",
+        "source": {
+          "bytes": 1513,
+          "path": "<locally supplied restricted artifact>",
+          "sha256": "69e6186e9349764e8b0010bde358de056ad424ada08037aad83a8960be405323"
+        },
+        "threshold": 0.212158203125
+      },
+      "ap_specific_readmission": {
+        "partition": "2021A",
+        "probability_field": "p_ap_specific_readmission_calibrated",
+        "source": {
+          "bytes": 1513,
+          "path": "<locally supplied restricted artifact>",
+          "sha256": "69e6186e9349764e8b0010bde358de056ad424ada08037aad83a8960be405323"
+        },
+        "threshold": 0.1077880859375
+      }
+    },
+    "subgroups": [
+      "sex",
+      "age_group"
+    ],
+    "uncertainty": {
+      "bootstrap_unit": "subject_id",
+      "replicates": 1000
+    }
+  },
+  "inference_adapter": {
+    "calibrators": {
+      "bytes": 189,
+      "path": "<locally supplied restricted artifact>",
+      "sha256": "0932551972498609f48c73496b9965a426612167bb487799a9531a9633299130"
+    },
+    "checkpoint": {
+      "bytes": 457446846,
+      "path": "<locally supplied restricted artifact>",
+      "sha256": "e4680d697f303574ab946e6f7e6fcdc32409a46ca8e603d1f264ed8aa5c62efe"
+    },
+    "conformal_binding": {
+      "bytes": 8345,
+      "path": "<locally supplied restricted artifact>",
+      "sha256": "7ae4d3c1dd32edbb659f1d97eb0f3c6d4ac2ee0c2915996e678b7efd97a5fd9b"
+    },
+    "dx_vocabulary": {
+      "bytes": 2208540,
+      "path": "<locally supplied restricted artifact>",
+      "sha256": "b890639fea65b18da16c5bd98801eeb5f3c09510fb098fa0b90ab2efdab5c74d"
+    },
+    "finetune_manifest": {
+      "bytes": 8124,
+      "path": "<locally supplied restricted artifact>",
+      "sha256": "13c5271a70df4761764e2a681d5e1cd0db1d66d82cc4e544268c72dc39e52018"
+    },
+    "function": "predict_common_variable_episode",
+    "hierarchy_arrays": {
+      "bytes": 199840,
+      "path": "<locally supplied restricted artifact>",
+      "sha256": "edb1f44b782fd4a9a70f7167007c14eccb7facbfe5706c3098ac995567778bc7"
+    },
+    "hierarchy_vocabularies": {
+      "bytes": 17011,
+      "path": "<locally supplied restricted artifact>",
+      "sha256": "0708ecfeb75f004a3522195cc67b3eaa1f2ce078b76db14dd891fd540eedcaf5"
+    },
+    "mimic_fit": false,
+    "mimic_recalibration": false,
+    "mimic_threshold_optimization": false,
+    "model_id": "common_variable_only",
+    "module": "common_variable_inference_adapter_v2",
+    "operating_manifest": {
+      "bytes": 3693,
+      "path": "<locally supplied restricted artifact>",
+      "sha256": "d3ac1fc03e339a1ffadd0dd34cdbb77bd1eba56fae3d6ee96c68ee7994a62cf5"
+    },
+    "pr_vocabulary": {
+      "bytes": 2205352,
+      "path": "<locally supplied restricted artifact>",
+      "sha256": "bc478bd8729adc33915468a4452a87474590baa8e52770bad02d21065e07e9bb"
+    },
+    "thresholds": {
+      "bytes": 1513,
+      "path": "<locally supplied restricted artifact>",
+      "sha256": "69e6186e9349764e8b0010bde358de056ad424ada08037aad83a8960be405323"
+    },
+    "vocabulary_growth": false
+  },
+  "method_lock": {
+    "bytes": 14208,
+    "path": "<locally supplied restricted artifact>",
+    "sha256": "69114be50eccfa37c2a560e4afd1e6a64d902a7f510ba04463400b83ed063a3c"
+  },
+  "runtime": {
+    "bytes": 54407,
+    "path": "<locally supplied restricted artifact>",
+    "sha256": "e08d98f3143a96df70ba5a701b0e4240712ae73af342e7b812ea0081acb45c5c"
+  }
+}
+

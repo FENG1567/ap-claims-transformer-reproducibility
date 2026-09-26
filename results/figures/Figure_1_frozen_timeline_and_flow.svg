@@ -1,0 +1,85 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' class='svglite' width='518.74pt' height='260.79pt' viewBox='0 0 518.74 260.79'>
+<defs>
+  <style type='text/css'><![CDATA[
+    .svglite line, .svglite polyline, .svglite polygon, .svglite path, .svglite rect, .svglite circle {
+      fill: none;
+      stroke: #000000;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      stroke-miterlimit: 10.00;
+    }
+    .svglite text {
+      white-space: pre;
+    }
+  ]]></style>
+</defs>
+<rect width='100%' height='100%' style='stroke: none; fill: #FFFFFF;'/>
+<defs>
+  <clipPath id='cpMC4wMHw1MTguNzR8MC4wMHwyNjAuNzk='>
+    <rect x='0.00' y='0.00' width='518.74' height='260.79' />
+  </clipPath>
+</defs>
+<g clip-path='url(#cpMC4wMHw1MTguNzR8MC4wMHwyNjAuNzk=)'>
+<rect x='0.000000000000064' y='0.00' width='518.74' height='260.79' style='stroke-width: 0.68; stroke: #FFFFFF; fill: #FFFFFF;' />
+</g>
+<defs>
+  <clipPath id='cpMTQuNjZ8NTE1LjI1fDMzLjU4fDIzNy42Mg=='>
+    <rect x='14.66' y='33.58' width='500.59' height='204.04' />
+  </clipPath>
+</defs>
+<g clip-path='url(#cpMTQuNjZ8NTE1LjI1fDMzLjU4fDIzNy42Mg==)'>
+</g>
+<g clip-path='url(#cpMC4wMHw1MTguNzR8MC4wMHwyNjAuNzk=)'>
+</g>
+<defs>
+  <clipPath id='cpMy40OXwyNjUuMDB8My40OXwyNTcuMzA='>
+    <rect x='3.49' y='3.49' width='261.52' height='253.81' />
+  </clipPath>
+</defs>
+<g clip-path='url(#cpMy40OXwyNjUuMDB8My40OXwyNTcuMzA=)'>
+<rect x='3.49' y='3.49' width='261.52' height='253.81' style='stroke-width: 0.68; stroke: #FFFFFF; fill: #FFFFFF;' />
+</g>
+<g clip-path='url(#cpMC4wMHw1MTguNzR8MC4wMHwyNjAuNzk=)'>
+<rect x='14.66' y='33.58' width='245.36' height='204.04' style='stroke-width: 0.68; stroke: none; fill: #FFFFFF;' />
+<polyline points='25.81,237.62 25.81,33.58 ' style='stroke-width: 0.53; stroke: #E8E8E8; stroke-linecap: butt;' />
+<polyline points='100.17,237.62 100.17,33.58 ' style='stroke-width: 0.53; stroke: #E8E8E8; stroke-linecap: butt;' />
+<polyline points='174.52,237.62 174.52,33.58 ' style='stroke-width: 0.53; stroke: #E8E8E8; stroke-linecap: butt;' />
+<polyline points='248.87,237.62 248.87,33.58 ' style='stroke-width: 0.53; stroke: #E8E8E8; stroke-linecap: butt;' />
+<line x1='14.66' y1='166.52' x2='260.02' y2='166.52' style='stroke-width: 1.07; stroke: #777777; stroke-linecap: butt;' />
+<circle cx='25.81' cy='166.52' r='4.62' style='stroke-width: 0.71; stroke: #4C78A8; fill: #4C78A8;' />
+<circle cx='100.17' cy='166.52' r='4.62' style='stroke-width: 0.71; stroke: #E45756; fill: #E45756;' />
+<circle cx='174.52' cy='166.52' r='4.62' style='stroke-width: 0.71; stroke: #72B7B2; fill: #72B7B2;' />
+<circle cx='248.87' cy='166.52' r='4.62' style='stroke-width: 0.71; stroke: #F2A541; fill: #F2A541;' />
+<text x='25.81' y='136.42' text-anchor='middle' style='font-size: 7.68px;fill: #222222; font-family: "Arial";' textLength='45.23px' lengthAdjust='spacingAndGlyphs'>Development</text>
+<text x='25.81' y='147.48' text-anchor='middle' style='font-size: 7.68px;fill: #222222; font-family: "Arial";' textLength='36.71px' lengthAdjust='spacingAndGlyphs'>2018-2020</text>
+<text x='100.17' y='136.42' text-anchor='middle' style='font-size: 7.68px;fill: #222222; font-family: "Arial";' textLength='69.55px' lengthAdjust='spacingAndGlyphs'>Selection, threshold,</text>
+<text x='100.17' y='147.48' text-anchor='middle' style='font-size: 7.68px;fill: #222222; font-family: "Arial";' textLength='76.39px' lengthAdjust='spacingAndGlyphs'>and calibration: 2021A</text>
+<text x='174.52' y='136.42' text-anchor='middle' style='font-size: 7.68px;fill: #222222; font-family: "Arial";' textLength='51.62px' lengthAdjust='spacingAndGlyphs'>Conformal only</text>
+<text x='174.52' y='147.48' text-anchor='middle' style='font-size: 7.68px;fill: #222222; font-family: "Arial";' textLength='22.20px' lengthAdjust='spacingAndGlyphs'>2021B</text>
+<text x='248.87' y='136.42' text-anchor='middle' style='font-size: 7.68px;fill: #222222; font-family: "Arial";' textLength='61.02px' lengthAdjust='spacingAndGlyphs'>Frozen evaluation</text>
+<text x='248.87' y='147.48' text-anchor='middle' style='font-size: 7.68px;fill: #222222; font-family: "Arial";' textLength='17.08px' lengthAdjust='spacingAndGlyphs'>2022</text>
+<text x='14.66' y='25.01' style='font-size: 8.00px; font-weight: bold; font-family: "Arial";' textLength='82.26px' lengthAdjust='spacingAndGlyphs'>Frozen study timeline</text>
+<text x='10.69' y='15.04' text-anchor='middle' style='font-size: 8.00px; font-weight: bold; font-family: "Arial";' textLength='4.45px' lengthAdjust='spacingAndGlyphs'>a</text>
+</g>
+<defs>
+  <clipPath id='cpMjY5Ljg5fDUxNS4yNXwzMy41OHwyMzcuNjI='>
+    <rect x='269.89' y='33.58' width='245.36' height='204.04' />
+  </clipPath>
+</defs>
+<g clip-path='url(#cpMjY5Ljg5fDUxNS4yNXwzMy41OHwyMzcuNjI=)'>
+<rect x='292.20' y='53.99' width='200.75' height='40.81' style='stroke-width: 1.07; stroke: #4C78A8; stroke-linecap: butt; stroke-linejoin: miter; fill: #E8F0F8;' />
+<text x='392.57' y='71.30' text-anchor='middle' style='font-size: 8.54px; font-family: "Arial";' textLength='95.80px' lengthAdjust='spacingAndGlyphs'>2022 temporal evaluation</text>
+<text x='392.57' y='83.59' text-anchor='middle' style='font-size: 8.54px; font-family: "Arial";' textLength='129.18px' lengthAdjust='spacingAndGlyphs'>119,114 episodes; 99,750 patients</text>
+<rect x='292.20' y='124.47' width='200.75' height='40.81' style='stroke-width: 1.07; stroke: #E45756; stroke-linecap: butt; stroke-linejoin: miter; fill: #FBE9E7;' />
+<text x='392.57' y='142.35' text-anchor='middle' style='font-size: 6.97px; font-family: "Arial";' textLength='127.79px' lengthAdjust='spacingAndGlyphs'>Post-unblinding deterministic amendment</text>
+<text x='392.57' y='152.39' text-anchor='middle' style='font-size: 6.97px; font-family: "Arial";' textLength='168.84px' lengthAdjust='spacingAndGlyphs'>2018-2021 reconstruction: 0 key and label mismatches</text>
+<rect x='292.20' y='198.67' width='200.75' height='29.68' style='stroke-width: 1.07; stroke: #72B7B2; stroke-linecap: butt; stroke-linejoin: miter; fill: #EAF5F3;' />
+<text x='392.57' y='210.99' text-anchor='middle' style='font-size: 6.97px; font-family: "Arial";' textLength='122.72px' lengthAdjust='spacingAndGlyphs'>Restricted same-system MIMIC transfer</text>
+<text x='392.57' y='221.02' text-anchor='middle' style='font-size: 6.97px; font-family: "Arial";' textLength='137.88px' lengthAdjust='spacingAndGlyphs'>1,810 pre-gate; 24 excluded; 1,786 analysed</text>
+</g>
+<g clip-path='url(#cpMC4wMHw1MTguNzR8MC4wMHwyNjAuNzk=)'>
+<text x='269.89' y='30.81' style='font-size: 13.20px; font-family: "Arial";' textLength='162.78px' lengthAdjust='spacingAndGlyphs'>Evaluation and transfer flow</text>
+<text x='267.45' y='15.04' text-anchor='middle' style='font-size: 8.00px; font-weight: bold; font-family: "Arial";' textLength='4.89px' lengthAdjust='spacingAndGlyphs'>b</text>
+</g>
+</svg>

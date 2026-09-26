@@ -1,0 +1,54 @@
+{
+  "2021B_accessed": false,
+  "all_operating_points_registry": {
+    "bytes": 19880,
+    "path": "<locally supplied restricted artifact>",
+    "sha256": "395b78cd5405175188899fef2036fcab3ab52c05d545af5e0ab71666519d6c80"
+  },
+  "model_or_threshold_selection_on_2021A": false,
+  "operating_point": {
+    "binary_calibrators": {
+      "bytes": 189,
+      "path": "<locally supplied restricted artifact>",
+      "sha256": "0932551972498609f48c73496b9965a426612167bb487799a9531a9633299130"
+    },
+    "directory": "<locally supplied restricted artifact>",
+    "manifest": {
+      "bytes": 3693,
+      "path": "<locally supplied restricted artifact>",
+      "sha256": "d3ac1fc03e339a1ffadd0dd34cdbb77bd1eba56fae3d6ee96c68ee7994a62cf5"
+    },
+    "thresholds": {
+      "bytes": 1513,
+      "path": "<locally supplied restricted artifact>",
+      "sha256": "69e6186e9349764e8b0010bde358de056ad424ada08037aad83a8960be405323"
+    }
+  },
+  "selected_id": "common_variable_only",
+  "selected_model": {
+    "checkpoint": {
+      "bytes": 457446846,
+      "path": "<locally supplied restricted artifact>",
+      "sha256": "e4680d697f303574ab946e6f7e6fcdc32409a46ca8e603d1f264ed8aa5c62efe"
+    },
+    "configuration": {
+      "common_variable_only": true
+    },
+    "directory": "<locally supplied restricted artifact>",
+    "finetune_manifest": {
+      "bytes": 8124,
+      "path": "<locally supplied restricted artifact>",
+      "sha256": "13c5271a70df4761764e2a681d5e1cd0db1d66d82cc4e544268c72dc39e52018"
+    },
+    "prediction_2021A": {
+      "bytes": 2025204,
+      "path": "<locally supplied restricted artifact>",
+      "sha256": "4340954bfe6557c73f4df801d71b6ae66cb8392f274213e2dafe1e00955b0140"
+    }
+  },
+  "selection_mode": "pre_specified_common_variable_only_no_metric_selection",
+  "selection_partition": "2021A",
+  "status": "LOCKED_ON_2021A_PRE_2021B_PRE_2022",
+  "year_2022_accessed": false
+}
+

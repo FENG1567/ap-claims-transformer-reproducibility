@@ -1,0 +1,8 @@
+version: CMS_PRA_v4.0_calendar_2022_reporting_2024
+status: LOCKED_PRE_2022_TEST_ACCESS
+planned_if:
+  - any_procedure_in_PR1
+  - principal_diagnosis_in_PR2
+  - any_procedure_in_PR3 AND principal_diagnosis_not_in_PR4
+unknown_policy: exclude_when_unknown_precedes_or_ties_first_unplanned_readmission
+fiscal_years: [2022, 2023]

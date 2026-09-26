@@ -1,0 +1,11 @@
+name: ap-claims-transformer
+channels:
+  - conda-forge
+  - pytorch
+dependencies:
+  - python=3.12
+  - pip
+  - r-base>=4.3
+  - pip:
+      - -r requirements.txt
+

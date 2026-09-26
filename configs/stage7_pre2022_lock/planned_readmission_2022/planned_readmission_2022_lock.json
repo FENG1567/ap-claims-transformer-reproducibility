@@ -1,0 +1,165 @@
+{
+  "algorithm": "CMS Planned Readmission Algorithm Version 4.0",
+  "artifacts": {
+    "algorithm_code_sets": {
+      "bytes": 242363,
+      "file": "annual_algorithm_code_sets_2022.parquet",
+      "sha256": "6d488576caf75b53f6db61b402042b659b04824dfb1b210b7747605d111e8b35"
+    },
+    "algorithm_rules": {
+      "bytes": 359,
+      "file": "algorithm_rules_2022.yml",
+      "sha256": "17798dc5ccf0d269cca9f0b6c029a570860a9fab6308fc4142f2990d952617a1"
+    },
+    "ccs_mapping": {
+      "bytes": 1539917,
+      "file": "annual_ccs_mapping_2022.parquet",
+      "sha256": "eb2d2c9f4ccad244efe3af1816d06a693eba11a0f5279ca70a15c55d48273701"
+    },
+    "specification_rows": {
+      "bytes": 2637045,
+      "file": "annual_spec_rows_2022.csv",
+      "sha256": "9f219370c5c654594534b779207ea7f10411934dca6ec4b513938b4d2dbb959f"
+    }
+  },
+  "calendar_year": 2022,
+  "fiscal_years": [
+    2022,
+    2023
+  ],
+  "nrd_2022_accessed": false,
+  "qc": {
+    "calendar_year": 2022,
+    "fiscal_years": [
+      2022,
+      2023
+    ],
+    "mapping_codes": {
+      "CM": 74060,
+      "PCS": 78701
+    },
+    "reporting_year": 2024,
+    "status_rule": "active unless normalized status starts with remove",
+    "tables": {
+      "PR.1": {
+        "active_ccs_categories": 3,
+        "active_direct_codes": 0,
+        "direct_codes_invalid_for_calendar_year": 0,
+        "direct_invalid_examples": [],
+        "expanded_category_codes": 153,
+        "final_valid_codes": 119
+      },
+      "PR.2": {
+        "active_ccs_categories": 2,
+        "active_direct_codes": 0,
+        "direct_codes_invalid_for_calendar_year": 0,
+        "direct_invalid_examples": [],
+        "expanded_category_codes": 40,
+        "final_valid_codes": 40
+      },
+      "PR.3": {
+        "active_ccs_categories": 65,
+        "active_direct_codes": 2638,
+        "direct_codes_invalid_for_calendar_year": 14,
+        "direct_invalid_examples": [
+          "04V03C6",
+          "04V03D6",
+          "04V03E6",
+          "04V03F6",
+          "04V03Z6",
+          "04V04C6",
+          "04V04D6",
+          "04V04E6",
+          "04V04F6",
+          "04V04Z6",
+          "X2C0361",
+          "X2C1361",
+          "X2C2361",
+          "X2C3361"
+        ],
+        "expanded_category_codes": 44803,
+        "final_valid_codes": 47417
+      },
+      "PR.4": {
+        "active_ccs_categories": 82,
+        "active_direct_codes": 11285,
+        "direct_codes_invalid_for_calendar_year": 10,
+        "direct_invalid_examples": [
+          "K830",
+          "T404X1A",
+          "T404X2A",
+          "T404X3A",
+          "T404X4A",
+          "T404X6A",
+          "T407X2A",
+          "T670XXA",
+          "T814XXA",
+          "Z915"
+        ],
+        "expanded_category_codes": 8691,
+        "final_valid_codes": 19929
+      }
+    },
+    "valid_catalog_codes": {
+      "CM": 73927,
+      "PCS": 78594
+    },
+    "valid_codes_missing_from_mapping": {
+      "CM": 0,
+      "PCS": 0
+    }
+  },
+  "qualitynet_files": {
+    "methodology": {
+      "api_url": "https://qualitynet.cms.gov/publicgateway/public/files/682b4b3b662c6b68b52cc8fb",
+      "file_id": "682b4b3b662c6b68b52cc8fb",
+      "filename": "2024_Rdmsn_MeasureMethodology.zip"
+    },
+    "resources": {
+      "api_url": "https://qualitynet.cms.gov/publicgateway/public/files/685314437ed210cf2a298433",
+      "file_id": "685314437ed210cf2a298433",
+      "filename": "2024_ArchivedResources_Rdmsn.zip"
+    }
+  },
+  "qualitynet_page": "https://qualitynet.cms.gov/inpatient/measures/readmission/resources",
+  "reporting_year": 2024,
+  "schema_version": "stage7_pra_calendar_2022_v1",
+  "sources": {
+    "cms_hwr_2024_specification": {
+      "bytes": 740092,
+      "path": "work\\reference\\CMS_2024_HWR_methodology\\2024_Rdmsn_MeasureMethodology\\2024_HWR_v1.0.xlsx",
+      "sha256": "dc18b0d2df2c86ec916d7cdd951b17a8c8673a740e09a97f6b9ba79fbafbe731"
+    },
+    "official_icd10_fy2018_2023_catalog": {
+      "bytes": 15252120,
+      "path": "work\\reference\\official_icd10_catalog_fy2018_2023.parquet",
+      "sha256": "d6193b186c4dc38ad26beb62e564c18e3dc964d2804122cfcf2a8baf992c708f"
+    },
+    "qualitynet_2024_methodology_archive": {
+      "bytes": 8642687,
+      "path": "work\\reference\\2024_Rdmsn_MeasureMethodology.zip",
+      "sha256": "f297d5f26c15e42d1eacfcdbd0e2015e7b261e3764e9e814d84a8377c105d5a4"
+    },
+    "qualitynet_2024_resources_archive": {
+      "bytes": 21275607,
+      "path": "work\\reference\\2024_ArchivedResources_Rdmsn.zip",
+      "sha256": "ce65815a1bb9a16c2aefa5e17302dda9eaedc1dc22ec18209e2a24f9365d7ae3"
+    },
+    "stage2_parser_code": {
+      "bytes": 16155,
+      "path": "work\\stage2\\build_planned_readmission_lock.py",
+      "sha256": "084101359fa5f11a32419b81f3e8ecbf4bf4a18633cfa6aa1efaffe9cc9db517"
+    },
+    "stage7_builder_code": {
+      "bytes": 14002,
+      "path": "work\\stage7\\build_2022_planned_readmission_lock.py",
+      "sha256": "3c3286f9812fcae9bafc66c32f9b287c8b37b0333b3df6c1525c75fbd063225f"
+    },
+    "yale_modified_ccs_2024_mapping": {
+      "bytes": 7426037,
+      "path": "work\\reference\\CMS_2024_HWR_resources\\YaleMod_CCS_PCS&CM_Map_for_2024_Reporting_External_Final_10.23.23.xlsx",
+      "sha256": "c32eef34ef88f897e199567c7a92c9445bc8752be61bccabacfcf2f70746b36e"
+    }
+  },
+  "status": "PASS_2022_PRA_LOCKED_PRE_TEST_ACCESS"
+}

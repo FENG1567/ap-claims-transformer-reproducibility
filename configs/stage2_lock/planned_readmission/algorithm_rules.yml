@@ -1,0 +1,27 @@
+version: PRA_v4.0_annual_alignment_v1
+status: LOCKED_PRE_2022
+logic:
+  planned_if:
+    - any_procedure_in_PR1
+    - principal_diagnosis_in_PR2
+    - any_procedure_in_PR3 AND principal_diagnosis_not_in_PR4
+  unplanned_if: NOT planned
+positions:
+  PR1: any_procedure_position
+  PR2: principal_diagnosis_only
+  PR3: any_procedure_position
+  PR4: principal_diagnosis_only
+annual_alignment:
+  2018: CMS_HWR_2020_reporting_specification_FY2018_FY2019_codes
+  2019: CMS_HWR_2021_reporting_specification_FY2019_FY2020_codes
+  2020: CMS_HWR_2022_reporting_specification_FY2020_FY2021_codes
+  2021: CMS_HWR_2023_reporting_specification_FY2021_FY2022_codes
+status_interpretation:
+  active: blank_dash_added_revised_or_other_non_remove_status
+  inactive: status_normalized_starts_with_remove
+unknown_mapping_policy:
+  primary: flag_algorithm_unknown_and_exclude_if_an_observed_code_is_absent_from_the_year_map_and_not_an_explicit_direct_code
+  sensitivity:
+    - treat_all_unknown_as_unplanned
+    - treat_all_unknown_as_planned
+2022_policy: sealed_until_stage7_then_apply_predeclared_annual_alignment_rule

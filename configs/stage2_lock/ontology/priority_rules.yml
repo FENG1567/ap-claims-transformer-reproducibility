@@ -1,0 +1,36 @@
+version: 1.0.0
+status: LOCKED_PRE_2022
+index_episode:
+  adult: AGE >= 18
+  principal_ap: normalized_I10_DX1 starts_with K85
+  alive_discharge: DIED == 0
+  observation_window: index_episode_discharge_day <= 335
+  cross_year_linkage: forbidden
+episode_collapse:
+  order: [NRD_VisitLink, NRD_DaysToEvent, KEY_NRD]
+  rule: merge overlapping or contiguous transfer-linked records before outcome search
+  exact_transfer_value_sets: must_be_resolved_from_year_specific_HCUP_labels_before_stage4
+  conservative_fail_rule: unresolved_transfer_labels_blocks_stage4
+candidate_readmission:
+  interval: 1_through_30_days_after_episode_discharge
+  use_first_qualifying_episode_only: true
+  planned_status_primary: CMS_Planned_Readmission_Algorithm_v4_annual_alignment
+  elective_proxy_is_not_equivalent: true
+  unknown_mapping_primary: exclude_and_report
+  unknown_mapping_sensitivity: [all_unknown_unplanned, all_unknown_planned]
+primary_cause_priority:
+  - rank: 1
+    node: readmission.ap_specific
+    rule: principal_diagnosis_in_locked_code_table
+  - rank: 2
+    node: readmission.biliary_event
+    rule: principal_diagnosis_in_locked_code_table
+  - rank: 3
+    node: readmission.sepsis_or_acute_organ_dysfunction
+    rule: principal_diagnosis_in_locked_code_table
+  - rank: 4
+    node: readmission.other
+    rule: any_other_principal_diagnosis
+  - rank: 5
+    node: no_unplanned_readmission
+    rule: no_qualifying_readmission_within_window

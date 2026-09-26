@@ -1,0 +1,10 @@
+nominal,scope,n,empirical_coverage,mean_set_size,abstention_rate,task,guarantee
+0.8,global,1786,0.7956326987681971,1.0,0.3437849944008959,mutually exclusive five-class readmission leaf label,empirical transfer coverage only; no exchangeability guarantee
+0.8,sex,1786,0.7956326987681971,1.0,0.3437849944008959,mutually exclusive five-class readmission leaf label,empirical transfer coverage only; no exchangeability guarantee
+0.8,age_group,1786,0.7956326987681971,1.0,0.3437849944008959,mutually exclusive five-class readmission leaf label,empirical transfer coverage only; no exchangeability guarantee
+0.9,global,1786,0.8499440089585666,1.4059350503919372,0.4176931690929451,mutually exclusive five-class readmission leaf label,empirical transfer coverage only; no exchangeability guarantee
+0.9,sex,1786,0.8505039193729004,1.4098544232922732,0.41825307950727886,mutually exclusive five-class readmission leaf label,empirical transfer coverage only; no exchangeability guarantee
+0.9,age_group,1786,0.8493840985442329,1.4204927211646137,0.42609182530795076,mutually exclusive five-class readmission leaf label,empirical transfer coverage only; no exchangeability guarantee
+0.95,global,1786,0.8779395296752519,2.2346024636058233,0.7564389697648376,mutually exclusive five-class readmission leaf label,empirical transfer coverage only; no exchangeability guarantee
+0.95,sex,1786,0.8779395296752519,2.234042553191489,0.7547592385218365,mutually exclusive five-class readmission leaf label,empirical transfer coverage only; no exchangeability guarantee
+0.95,age_group,1786,0.879619260918253,2.256998880179171,0.7592385218365062,mutually exclusive five-class readmission leaf label,empirical transfer coverage only; no exchangeability guarantee

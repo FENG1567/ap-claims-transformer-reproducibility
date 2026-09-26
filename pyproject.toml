@@ -1,0 +1,34 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ap-claims-transformer-reproducibility"
+version = "1.0.0"
+description = "Reproducibility code for frozen temporal and restricted cross-domain validation of an acute-pancreatitis claims Transformer."
+requires-python = ">=3.12,<3.13"
+readme = "README.md"
+license = {file = "LICENSE"}
+authors = [{name = "AP Claims Transformer authors"}]
+dependencies = [
+  "duckdb==1.5.0",
+  "joblib==1.5.2",
+  "lightgbm==4.6.0",
+  "numpy==2.3.2",
+  "openpyxl==3.1.5",
+  "pandas==2.3.2",
+  "psutil==7.0.0",
+  "pyarrow==25.0.0",
+  "pypdf==6.2.0",
+  "PyYAML==6.0.2",
+  "scikit-learn==1.7.2",
+  "scipy==1.18.1",
+  "torch==2.5.1",
+]
+
+[project.optional-dependencies]
+dev = ["pytest==9.1.1", "python-docx==1.2.0"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra"

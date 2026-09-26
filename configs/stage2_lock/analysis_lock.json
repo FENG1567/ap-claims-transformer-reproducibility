@@ -1,0 +1,113 @@
+{
+  "active_vocabulary_update_years": [
+    2018,
+    2019,
+    2020
+  ],
+  "artifacts": {
+    "decision_log.md": {
+      "bytes": 2754,
+      "sha256": "a67371ea3da51b8389f25ed31e3055f2042b3451af055b41d4b91eb8562febf9"
+    },
+    "leakage_blacklist.yml": {
+      "bytes": 1000,
+      "sha256": "c6906b6233b9a9a7c3957de78685ce69cebb0ca99ecc107f9b0c0424a4961f54"
+    },
+    "ontology\\hierarchy.yml": {
+      "bytes": 1051,
+      "sha256": "71ed8f18b5d0036a1b47cad9c658be6fc1560af94af96d490667088a96c4f472"
+    },
+    "ontology\\icd_ccsr_labels.csv": {
+      "bytes": 48570,
+      "sha256": "ed645739cf01ade16042c532b25a6114e50e8dc530e0ceb3d205d8e7f1e1fc86"
+    },
+    "ontology\\priority_rules.yml": {
+      "bytes": 1496,
+      "sha256": "bf8c60b4ec0fd7abc8ba823dd0a26d4c1fcee44f79238decdc4b83538d197888"
+    },
+    "outcome_timing_matrix.csv": {
+      "bytes": 1874,
+      "sha256": "62ebb668b9abec55551c2a56290fb3e9ed9457c68c90a05432f63f5897dcf2e3"
+    },
+    "planned_readmission\\algorithm_rules.yml": {
+      "bytes": 1149,
+      "sha256": "b42dc1db8daafa652c25854243fd7f2dadf65598c8c6c7fe82fb3d19c65e7847"
+    },
+    "planned_readmission\\annual_algorithm_code_sets.parquet": {
+      "bytes": 659690,
+      "sha256": "5f131b0183882bf2db2d9c79d6fb2189a8e5b356910cd60e09aa2b8879e7d917"
+    },
+    "planned_readmission\\annual_ccs_mapping.parquet": {
+      "bytes": 5455987,
+      "sha256": "6ec4b8580dd03a196f392ba7cd206db9bdc3d12750fcb19467567a7d3fc5246c"
+    },
+    "planned_readmission\\annual_spec_rows.csv": {
+      "bytes": 11337581,
+      "sha256": "7f3b37a5f1566703104d57a50b48bc27ce3b4737969b4a0a4373ce570b390bf5"
+    },
+    "planned_readmission\\planned_readmission_lock.json": {
+      "bytes": 11450,
+      "sha256": "e1e682fea14da07e5b9ac531be13859781b7f8ad277bfdc1d6e73509aca64fa1"
+    },
+    "sap_v1.md": {
+      "bytes": 7153,
+      "sha256": "26d4d0b5fa547b65e4250c15ff6146b6cd5c76b205d69f7eaf491a3ec6bbec49"
+    }
+  },
+  "ccsr_versions": {
+    "diagnosis": "v2021.2",
+    "procedure": "v2021.1"
+  },
+  "conformal_only_partition": "2021B",
+  "created_date": "2026-09-12",
+  "development_years": [
+    2018,
+    2019,
+    2020
+  ],
+  "fallback_endpoint_name": "30-day nonelective readmission",
+  "lock_version": "1.0.0",
+  "model_selection_partition": "2021A",
+  "ontology_qc": {
+    "by_label": {
+      "context.biliary_procedure": 62,
+      "readmission.ap_specific": 18,
+      "readmission.biliary_event": 47,
+      "readmission.sepsis_or_acute_organ_dysfunction": 41
+    },
+    "codebook_claim_failures": [],
+    "missing_default_ccsr": 0,
+    "rows": 168,
+    "unique_codes": 168
+  },
+  "planned_readmission_gate": "PASS_CMS_PRA_V4_ANNUAL_ALIGNMENT_2018_2021",
+  "planned_readmission_lock_sha256": "e1e682fea14da07e5b9ac531be13859781b7f8ad277bfdc1d6e73509aca64fa1",
+  "sealed_test_year": 2022,
+  "sources": {
+    "outputs\\stage2_lock\\planned_readmission\\planned_readmission_lock.json": {
+      "bytes": 11450,
+      "sha256": "e1e682fea14da07e5b9ac531be13859781b7f8ad277bfdc1d6e73509aca64fa1"
+    },
+    "work\\reference\\DXCCSR_v2021-2.zip": {
+      "bytes": 4230686,
+      "sha256": "21a843d6b478c45be33319aca0f4e058236b259ff0f58ae02a0f0b2d89e0fddb"
+    },
+    "work\\reference\\PRCCSR_v2021-1.zip": {
+      "bytes": 6445861,
+      "sha256": "ce47e55e6ec62f23fc571150e5e882b216b95e97562b2d32fb369f087b790d74"
+    },
+    "work\\reference\\cms_planned_readmission_algorithm.zip": {
+      "bytes": 694608,
+      "sha256": "677aaa16bb0868728c6da63fd87164df30798a7269ac44b888f1339c995e26dd"
+    },
+    "work\\reference\\nrd_biliary_codebook_v1.csv": {
+      "bytes": 53625,
+      "sha256": "4f437bedb9ea868a9672c0d0e43cf0a14232152b3eb12f10b9e2cb8893e47b55"
+    },
+    "work\\reference\\official_icd10_catalog_fy2018_2023.parquet": {
+      "bytes": 15252120,
+      "sha256": "d6193b186c4dc38ad26beb62e564c18e3dc964d2804122cfcf2a8baf992c708f"
+    }
+  },
+  "status": "LOCKED_PRE_2022"
+}

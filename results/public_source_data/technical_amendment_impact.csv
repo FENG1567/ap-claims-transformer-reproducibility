@@ -1,0 +1,3 @@
+analysis_state,episodes,any_readmission_events,ap_specific_readmission_events,negative_episodes,recovered_negative_episodes,algorithm_unknown_first_excluded,positive_episode_labels,leaf_labels,interpretation
+pre_correction_derived_table,16727,16727,,,0,0,unchanged,unchanged,"No valid binary-performance estimate: an infinity comparison removed all negative episodes."
+post_correction_frozen_evaluation,119114,16727,8110,102387,102387,1,unchanged,unchanged,"Formal frozen 2022 evaluation after deterministic repair."

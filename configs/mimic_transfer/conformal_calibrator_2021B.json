@@ -1,0 +1,591 @@
+{
+  "abstention_rule": "90% leaf set not singleton or binary/leaf hierarchy conflict",
+  "ancestor_closure": true,
+  "any_readmission_probability_column": "p_any_readmission_calibrated",
+  "any_readmission_threshold_from_2021A": 0.212158203125,
+  "artifact": {
+    "bytes": 1622713,
+    "file": "conformal_sets_2021B.parquet",
+    "sha256": "1a01c7f72467793a58df078702740e7dc981b01b53f090a9b8a53e5f80739bb2"
+  },
+  "calibration": {
+    "global": {
+      "80": {
+        "alpha": 0.2,
+        "n": 62686,
+        "q": 0.3115881047932414
+      },
+      "90": {
+        "alpha": 0.1,
+        "n": 62686,
+        "q": 0.8410341327920517
+      },
+      "95": {
+        "alpha": 0.05,
+        "n": 62686,
+        "q": 0.9435732132979839
+      }
+    },
+    "mondrian": {
+      "age_group": {
+        "80": {
+          "18-44": {
+            "events_any_readmission": 3504,
+            "n": 23955,
+            "q": 0.34420826148657924,
+            "status": "CALIBRATED"
+          },
+          "45-64": {
+            "events_any_readmission": 3596,
+            "n": 24544,
+            "q": 0.3368653665859481,
+            "status": "CALIBRATED"
+          },
+          "65-74": {
+            "events_any_readmission": 1017,
+            "n": 8170,
+            "q": 0.25304366399170053,
+            "status": "CALIBRATED"
+          },
+          "75+": {
+            "events_any_readmission": 757,
+            "n": 6017,
+            "q": 0.2174873932994994,
+            "status": "CALIBRATED"
+          }
+        },
+        "90": {
+          "18-44": {
+            "events_any_readmission": 3504,
+            "n": 23955,
+            "q": 0.8207940305368483,
+            "status": "CALIBRATED"
+          },
+          "45-64": {
+            "events_any_readmission": 3596,
+            "n": 24544,
+            "q": 0.8462932476693901,
+            "status": "CALIBRATED"
+          },
+          "65-74": {
+            "events_any_readmission": 1017,
+            "n": 8170,
+            "q": 0.8547568282980078,
+            "status": "CALIBRATED"
+          },
+          "75+": {
+            "events_any_readmission": 757,
+            "n": 6017,
+            "q": 0.8864196400643887,
+            "status": "CALIBRATED"
+          }
+        },
+        "95": {
+          "18-44": {
+            "events_any_readmission": 3504,
+            "n": 23955,
+            "q": 0.9373846102683318,
+            "status": "CALIBRATED"
+          },
+          "45-64": {
+            "events_any_readmission": 3596,
+            "n": 24544,
+            "q": 0.9417609639354082,
+            "status": "CALIBRATED"
+          },
+          "65-74": {
+            "events_any_readmission": 1017,
+            "n": 8170,
+            "q": 0.9524326220983118,
+            "status": "CALIBRATED"
+          },
+          "75+": {
+            "events_any_readmission": 757,
+            "n": 6017,
+            "q": 0.9591951962033526,
+            "status": "CALIBRATED"
+          }
+        }
+      },
+      "payer": {
+        "80": {
+          "-8": {
+            "events_any_readmission": 1,
+            "n": 10,
+            "q": 0.3115881047932414,
+            "status": "GLOBAL_FALLBACK_SMALL_CALIBRATION_GROUP"
+          },
+          "-9": {
+            "events_any_readmission": 20,
+            "n": 131,
+            "q": 0.3115881047932414,
+            "status": "GLOBAL_FALLBACK_SMALL_CALIBRATION_GROUP"
+          },
+          "1": {
+            "events_any_readmission": 2644,
+            "n": 17710,
+            "q": 0.3236995101704485,
+            "status": "CALIBRATED"
+          },
+          "2": {
+            "events_any_readmission": 3013,
+            "n": 17484,
+            "q": 0.4472745860405324,
+            "status": "CALIBRATED"
+          },
+          "3": {
+            "events_any_readmission": 2169,
+            "n": 20089,
+            "q": 0.21285008802867278,
+            "status": "CALIBRATED"
+          },
+          "4": {
+            "events_any_readmission": 684,
+            "n": 4807,
+            "q": 0.31212783181549897,
+            "status": "CALIBRATED"
+          },
+          "5": {
+            "events_any_readmission": 68,
+            "n": 439,
+            "q": 0.37705768379941107,
+            "status": "CALIBRATED"
+          },
+          "6": {
+            "events_any_readmission": 275,
+            "n": 2016,
+            "q": 0.3035402391829205,
+            "status": "CALIBRATED"
+          }
+        },
+        "90": {
+          "-8": {
+            "events_any_readmission": 1,
+            "n": 10,
+            "q": 0.8410341327920517,
+            "status": "GLOBAL_FALLBACK_SMALL_CALIBRATION_GROUP"
+          },
+          "-9": {
+            "events_any_readmission": 20,
+            "n": 131,
+            "q": 0.8410341327920517,
+            "status": "GLOBAL_FALLBACK_SMALL_CALIBRATION_GROUP"
+          },
+          "1": {
+            "events_any_readmission": 2644,
+            "n": 17710,
+            "q": 0.8797858494748736,
+            "status": "CALIBRATED"
+          },
+          "2": {
+            "events_any_readmission": 3013,
+            "n": 17484,
+            "q": 0.860263074593737,
+            "status": "CALIBRATED"
+          },
+          "3": {
+            "events_any_readmission": 2169,
+            "n": 20089,
+            "q": 0.69436391931891,
+            "status": "CALIBRATED"
+          },
+          "4": {
+            "events_any_readmission": 684,
+            "n": 4807,
+            "q": 0.8298601079202889,
+            "status": "CALIBRATED"
+          },
+          "5": {
+            "events_any_readmission": 68,
+            "n": 439,
+            "q": 0.8207940305368483,
+            "status": "CALIBRATED"
+          },
+          "6": {
+            "events_any_readmission": 275,
+            "n": 2016,
+            "q": 0.8362740441020768,
+            "status": "CALIBRATED"
+          }
+        },
+        "95": {
+          "-8": {
+            "events_any_readmission": 1,
+            "n": 10,
+            "q": 0.9435732132979839,
+            "status": "GLOBAL_FALLBACK_SMALL_CALIBRATION_GROUP"
+          },
+          "-9": {
+            "events_any_readmission": 20,
+            "n": 131,
+            "q": 0.9435732132979839,
+            "status": "GLOBAL_FALLBACK_SMALL_CALIBRATION_GROUP"
+          },
+          "1": {
+            "events_any_readmission": 2644,
+            "n": 17710,
+            "q": 0.9528535790846882,
+            "status": "CALIBRATED"
+          },
+          "2": {
+            "events_any_readmission": 3013,
+            "n": 17484,
+            "q": 0.9405749788556362,
+            "status": "CALIBRATED"
+          },
+          "3": {
+            "events_any_readmission": 2169,
+            "n": 20089,
+            "q": 0.9354807328232043,
+            "status": "CALIBRATED"
+          },
+          "4": {
+            "events_any_readmission": 684,
+            "n": 4807,
+            "q": 0.9414269362838611,
+            "status": "CALIBRATED"
+          },
+          "5": {
+            "events_any_readmission": 68,
+            "n": 439,
+            "q": 0.9437001824928452,
+            "status": "CALIBRATED"
+          },
+          "6": {
+            "events_any_readmission": 275,
+            "n": 2016,
+            "q": 0.9523540746961859,
+            "status": "CALIBRATED"
+          }
+        }
+      },
+      "sex": {
+        "80": {
+          "0": {
+            "events_any_readmission": 4986,
+            "n": 33908,
+            "q": 0.335007867257903,
+            "status": "CALIBRATED"
+          },
+          "1": {
+            "events_any_readmission": 3888,
+            "n": 28778,
+            "q": 0.2842174024472378,
+            "status": "CALIBRATED"
+          }
+        },
+        "90": {
+          "0": {
+            "events_any_readmission": 4986,
+            "n": 33908,
+            "q": 0.8453035722802499,
+            "status": "CALIBRATED"
+          },
+          "1": {
+            "events_any_readmission": 3888,
+            "n": 28778,
+            "q": 0.8353555685444769,
+            "status": "CALIBRATED"
+          }
+        },
+        "95": {
+          "0": {
+            "events_any_readmission": 4986,
+            "n": 33908,
+            "q": 0.944202160334848,
+            "status": "CALIBRATED"
+          },
+          "1": {
+            "events_any_readmission": 3888,
+            "n": 28778,
+            "q": 0.9425023056110036,
+            "status": "CALIBRATED"
+          }
+        }
+      },
+      "zip_income_quartile": {
+        "80": {
+          "-9": {
+            "events_any_readmission": 83,
+            "n": 677,
+            "q": 0.29264776549735705,
+            "status": "CALIBRATED"
+          },
+          "1": {
+            "events_any_readmission": 2827,
+            "n": 18400,
+            "q": 0.35951792984429976,
+            "status": "CALIBRATED"
+          },
+          "2": {
+            "events_any_readmission": 2326,
+            "n": 16327,
+            "q": 0.31231177661885223,
+            "status": "CALIBRATED"
+          },
+          "3": {
+            "events_any_readmission": 2117,
+            "n": 15192,
+            "q": 0.2943582230768057,
+            "status": "CALIBRATED"
+          },
+          "4": {
+            "events_any_readmission": 1521,
+            "n": 12090,
+            "q": 0.26315267440574064,
+            "status": "CALIBRATED"
+          }
+        },
+        "90": {
+          "-9": {
+            "events_any_readmission": 83,
+            "n": 677,
+            "q": 0.8298671647689865,
+            "status": "CALIBRATED"
+          },
+          "1": {
+            "events_any_readmission": 2827,
+            "n": 18400,
+            "q": 0.8580284355127281,
+            "status": "CALIBRATED"
+          },
+          "2": {
+            "events_any_readmission": 2326,
+            "n": 16327,
+            "q": 0.8451208741700069,
+            "status": "CALIBRATED"
+          },
+          "3": {
+            "events_any_readmission": 2117,
+            "n": 15192,
+            "q": 0.8355454895334513,
+            "status": "CALIBRATED"
+          },
+          "4": {
+            "events_any_readmission": 1521,
+            "n": 12090,
+            "q": 0.7918399426186352,
+            "status": "CALIBRATED"
+          }
+        },
+        "95": {
+          "-9": {
+            "events_any_readmission": 83,
+            "n": 677,
+            "q": 0.9401017343664106,
+            "status": "CALIBRATED"
+          },
+          "1": {
+            "events_any_readmission": 2827,
+            "n": 18400,
+            "q": 0.9460278641829645,
+            "status": "CALIBRATED"
+          },
+          "2": {
+            "events_any_readmission": 2326,
+            "n": 16327,
+            "q": 0.9414717226009877,
+            "status": "CALIBRATED"
+          },
+          "3": {
+            "events_any_readmission": 2117,
+            "n": 15192,
+            "q": 0.9437030143297951,
+            "status": "CALIBRATED"
+          },
+          "4": {
+            "events_any_readmission": 1521,
+            "n": 12090,
+            "q": 0.9412257649378674,
+            "status": "CALIBRATED"
+          }
+        }
+      }
+    }
+  },
+  "calibration_partition": "2021B only",
+  "confirmatory_subgroup_event_gate": ">=100 events; 50-99 exploratory; <50 descriptive (applied only at evaluation)",
+  "hierarchy": {
+    "leaves": [
+      "none",
+      "ap",
+      "biliary",
+      "sepsis_or_organ",
+      "other"
+    ],
+    "parent": "readmission",
+    "root": "any index stay"
+  },
+  "method": "split conformal class-probability threshold",
+  "model_or_threshold_selection_on_2021B": false,
+  "mondrian_fallback": {
+    "min_calibration_rows": 200,
+    "rule": "Groups below min_calibration_rows use the corresponding global q; all groups retain an output row."
+  },
+  "nominal_coverages": [
+    0.9,
+    0.8,
+    0.95
+  ],
+  "operating_point_source": {
+    "manifest": "<locally supplied restricted artifact>",
+    "manifest_sha256": "d3ac1fc03e339a1ffadd0dd34cdbb77bd1eba56fae3d6ee96c68ee7994a62cf5",
+    "probability_column": "p_any_readmission_calibrated",
+    "threshold": 0.212158203125,
+    "threshold_file": "<locally supplied restricted artifact>",
+    "threshold_sha256": "69e6186e9349764e8b0010bde358de056ad424ada08037aad83a8960be405323"
+  },
+  "risk_set_outputs": {
+    "global": {
+      "80": {
+        "ancestor_closed": "ancestor_closed_80",
+        "includes_readmission_parent": "includes_readmission_parent_80",
+        "includes_root": "includes_root_80",
+        "leaf_set_mask": "leaf_set_mask_80",
+        "leaf_set_size": "leaf_set_size_80",
+        "q_source": "global finite_sample_quantile over all 2021B rows"
+      },
+      "90": {
+        "ancestor_closed": "ancestor_closed_90",
+        "includes_readmission_parent": "includes_readmission_parent_90",
+        "includes_root": "includes_root_90",
+        "leaf_set_mask": "leaf_set_mask_90",
+        "leaf_set_size": "leaf_set_size_90",
+        "q_source": "global finite_sample_quantile over all 2021B rows"
+      },
+      "95": {
+        "ancestor_closed": "ancestor_closed_95",
+        "includes_readmission_parent": "includes_readmission_parent_95",
+        "includes_root": "includes_root_95",
+        "leaf_set_mask": "leaf_set_mask_95",
+        "leaf_set_size": "leaf_set_size_95",
+        "q_source": "global finite_sample_quantile over all 2021B rows"
+      }
+    },
+    "mondrian": {
+      "age_group": {
+        "group_column": "group_age_group",
+        "levels": {
+          "80": {
+            "ancestor_closed": "ancestor_closed_age_group_80",
+            "includes_readmission_parent": "includes_readmission_parent_age_group_80",
+            "includes_root": "includes_root_age_group_80",
+            "leaf_set_mask": "leaf_set_mask_age_group_80",
+            "leaf_set_size": "leaf_set_size_age_group_80",
+            "q_source": "group q when calibration rows meet min_mondrian_rows; otherwise global q"
+          },
+          "90": {
+            "ancestor_closed": "ancestor_closed_age_group_90",
+            "includes_readmission_parent": "includes_readmission_parent_age_group_90",
+            "includes_root": "includes_root_age_group_90",
+            "leaf_set_mask": "leaf_set_mask_age_group_90",
+            "leaf_set_size": "leaf_set_size_age_group_90",
+            "q_source": "group q when calibration rows meet min_mondrian_rows; otherwise global q"
+          },
+          "95": {
+            "ancestor_closed": "ancestor_closed_age_group_95",
+            "includes_readmission_parent": "includes_readmission_parent_age_group_95",
+            "includes_root": "includes_root_age_group_95",
+            "leaf_set_mask": "leaf_set_mask_age_group_95",
+            "leaf_set_size": "leaf_set_size_age_group_95",
+            "q_source": "group q when calibration rows meet min_mondrian_rows; otherwise global q"
+          }
+        }
+      },
+      "payer": {
+        "group_column": "group_payer",
+        "levels": {
+          "80": {
+            "ancestor_closed": "ancestor_closed_payer_80",
+            "includes_readmission_parent": "includes_readmission_parent_payer_80",
+            "includes_root": "includes_root_payer_80",
+            "leaf_set_mask": "leaf_set_mask_payer_80",
+            "leaf_set_size": "leaf_set_size_payer_80",
+            "q_source": "group q when calibration rows meet min_mondrian_rows; otherwise global q"
+          },
+          "90": {
+            "ancestor_closed": "ancestor_closed_payer_90",
+            "includes_readmission_parent": "includes_readmission_parent_payer_90",
+            "includes_root": "includes_root_payer_90",
+            "leaf_set_mask": "leaf_set_mask_payer_90",
+            "leaf_set_size": "leaf_set_size_payer_90",
+            "q_source": "group q when calibration rows meet min_mondrian_rows; otherwise global q"
+          },
+          "95": {
+            "ancestor_closed": "ancestor_closed_payer_95",
+            "includes_readmission_parent": "includes_readmission_parent_payer_95",
+            "includes_root": "includes_root_payer_95",
+            "leaf_set_mask": "leaf_set_mask_payer_95",
+            "leaf_set_size": "leaf_set_size_payer_95",
+            "q_source": "group q when calibration rows meet min_mondrian_rows; otherwise global q"
+          }
+        }
+      },
+      "sex": {
+        "group_column": "group_sex",
+        "levels": {
+          "80": {
+            "ancestor_closed": "ancestor_closed_sex_80",
+            "includes_readmission_parent": "includes_readmission_parent_sex_80",
+            "includes_root": "includes_root_sex_80",
+            "leaf_set_mask": "leaf_set_mask_sex_80",
+            "leaf_set_size": "leaf_set_size_sex_80",
+            "q_source": "group q when calibration rows meet min_mondrian_rows; otherwise global q"
+          },
+          "90": {
+            "ancestor_closed": "ancestor_closed_sex_90",
+            "includes_readmission_parent": "includes_readmission_parent_sex_90",
+            "includes_root": "includes_root_sex_90",
+            "leaf_set_mask": "leaf_set_mask_sex_90",
+            "leaf_set_size": "leaf_set_size_sex_90",
+            "q_source": "group q when calibration rows meet min_mondrian_rows; otherwise global q"
+          },
+          "95": {
+            "ancestor_closed": "ancestor_closed_sex_95",
+            "includes_readmission_parent": "includes_readmission_parent_sex_95",
+            "includes_root": "includes_root_sex_95",
+            "leaf_set_mask": "leaf_set_mask_sex_95",
+            "leaf_set_size": "leaf_set_size_sex_95",
+            "q_source": "group q when calibration rows meet min_mondrian_rows; otherwise global q"
+          }
+        }
+      },
+      "zip_income_quartile": {
+        "group_column": "group_zip_income_quartile",
+        "levels": {
+          "80": {
+            "ancestor_closed": "ancestor_closed_zip_income_quartile_80",
+            "includes_readmission_parent": "includes_readmission_parent_zip_income_quartile_80",
+            "includes_root": "includes_root_zip_income_quartile_80",
+            "leaf_set_mask": "leaf_set_mask_zip_income_quartile_80",
+            "leaf_set_size": "leaf_set_size_zip_income_quartile_80",
+            "q_source": "group q when calibration rows meet min_mondrian_rows; otherwise global q"
+          },
+          "90": {
+            "ancestor_closed": "ancestor_closed_zip_income_quartile_90",
+            "includes_readmission_parent": "includes_readmission_parent_zip_income_quartile_90",
+            "includes_root": "includes_root_zip_income_quartile_90",
+            "leaf_set_mask": "leaf_set_mask_zip_income_quartile_90",
+            "leaf_set_size": "leaf_set_size_zip_income_quartile_90",
+            "q_source": "group q when calibration rows meet min_mondrian_rows; otherwise global q"
+          },
+          "95": {
+            "ancestor_closed": "ancestor_closed_zip_income_quartile_95",
+            "includes_readmission_parent": "includes_readmission_parent_zip_income_quartile_95",
+            "includes_root": "includes_root_zip_income_quartile_95",
+            "leaf_set_mask": "leaf_set_mask_zip_income_quartile_95",
+            "leaf_set_size": "leaf_set_size_zip_income_quartile_95",
+            "q_source": "group q when calibration rows meet min_mondrian_rows; otherwise global q"
+          }
+        }
+      }
+    }
+  },
+  "source": {
+    "bytes": 2236015,
+    "file": "predictions_2021B.parquet",
+    "sha256": "a6ed80e64899803d873a2fd6d2f527217a22b9634c3e31c2b8e7390563da1ab3"
+  },
+  "status": "PASS_LOCKED_PRE_2022",
+  "year_2022_accessed": false
+}

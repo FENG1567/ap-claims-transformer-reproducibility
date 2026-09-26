@@ -1,0 +1,2 @@
+cohort,episodes,subjects,age_mean,female_percent,los_median,any_readmission_percent,ap_readmission_percent,oov_any_percent
+MIMIC-IV restricted same-system transfer,1786,1282,52.76427771556551,47.368421052631575,3.7534722222222223,19.092945128779395,9.126539753639417,18.980963045912656

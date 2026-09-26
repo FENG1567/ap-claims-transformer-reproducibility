@@ -1,0 +1,51 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+
+# R
+.Rhistory
+.RData
+.Rproj.user/
+
+# Operating systems and editors
+.DS_Store
+Thumbs.db
+*.swp
+~$*
+
+# Controlled-access or row-level data
+data/
+raw/
+restricted/
+private/
+credentials/
+secrets/
+*.dbc
+*.dbf
+*.sas7bdat
+*.dta
+*.duckdb
+*.sqlite
+*.parquet
+*.pt
+*.pth
+*.ckpt
+*.joblib
+*.pkl
+*.npz
+*.gz
+*.zip
+
+# Generated artifacts
+results/reproduced_figures/
+outputs/
+logs/
+*.log
+
+!configs/**/*.parquet
+

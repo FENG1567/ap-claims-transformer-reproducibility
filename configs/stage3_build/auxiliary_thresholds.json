@@ -1,0 +1,34 @@
+{
+  "status": "LOCKED_BEFORE_2021_EVALUATION_AND_2022_ACCESS",
+  "development_years": [
+    2018,
+    2019,
+    2020
+  ],
+  "eligibility": "principal AP and index_primary_base_eligible; future outcome status not used",
+  "high_cost_primary": {
+    "definition": "cost_2021_usd strictly greater than weighted_p90_usd",
+    "weighted_p90_usd": 19750.939453125,
+    "valid_n": 403157,
+    "weight_sum": 744758.9754568338
+  },
+  "high_cost_sensitivity": {
+    "definition": "cost_2021_usd strictly greater than unweighted_p90_usd",
+    "unweighted_p90_usd": 20430.432812500003
+  },
+  "prolonged_los_primary": {
+    "definition": "LOS > 7 days"
+  },
+  "prolonged_los_sensitivity": {
+    "definition": "LOS strictly greater than development weighted_p90_days",
+    "weighted_p90_days": 8.0,
+    "unweighted_p90_days": 8.0,
+    "valid_n": 404539,
+    "weight_sum": 746505.6239894629
+  },
+  "input_sha256": {
+    "compact\\year=2018\\ap_episodes.parquet": "e772a5e0098f70bc79e481bdbcc4ff679776a0ea2b9c182ff83ff152540a825e",
+    "compact\\year=2019\\ap_episodes.parquet": "f567770fea56b58063e684994f778466b4b7367a526311bafae8060c1eabef4d",
+    "compact\\year=2020\\ap_episodes.parquet": "23de1bd678e484df083a7d8d8708f7094894e21e25835801d6a853610478a7f2"
+  }
+}

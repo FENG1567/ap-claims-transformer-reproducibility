@@ -1,0 +1,43 @@
+cff-version: 1.2.0
+message: "If you use this code, please cite the accompanying manuscript and the archived software release."
+title: "AP Claims Transformer reproducibility package"
+type: software
+version: "1.0.0"
+date-released: "2026-09-27"
+repository-code: "https://github.com/FENG1567/ap-claims-transformer-reproducibility"
+url: "https://github.com/FENG1567/ap-claims-transformer-reproducibility/releases/tag/v1.0.0"
+authors:
+  - family-names: Feng
+    given-names: Shuo
+  - family-names: Shi
+    given-names: Chao
+  - family-names: Liu
+    given-names: Tianming
+  - family-names: Ding
+    given-names: Haoran
+  - family-names: Hang
+    given-names: Fenghe
+  - family-names: Huang
+    given-names: Zhenghao
+  - family-names: Liu
+    given-names: Liwei
+preferred-citation:
+  type: article
+  title: "Claims Transformer versus LightGBM for 30-day readmission after acute pancreatitis: frozen temporal validation and restricted cross-database transport"
+  authors:
+    - family-names: Feng
+      given-names: Shuo
+    - family-names: Shi
+      given-names: Chao
+    - family-names: Liu
+      given-names: Tianming
+    - family-names: Ding
+      given-names: Haoran
+    - family-names: Hang
+      given-names: Fenghe
+    - family-names: Huang
+      given-names: Zhenghao
+    - family-names: Liu
+      given-names: Liwei
+  year: 2026
+  notes: "Journal, volume, pages, and DOI pending."
