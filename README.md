@@ -59,4 +59,4 @@ The verified public release is tagged `v1.0.0`. See `CITATION.cff` for the prefe
 
 ## Licence
 
-The release is prepared under the MIT License for repository code. Third-party data, ontology mappings, and controlled-access datasets remain governed by their original licences and data-use agreements.
+Repository code is released under the MIT License. Third-party data, ontology mappings, and controlled-access datasets remain governed by their original licences and data-use agreements; see `LICENSE_NOTE.md`.

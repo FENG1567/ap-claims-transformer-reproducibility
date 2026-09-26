@@ -46,11 +46,12 @@ docs/RESTRICTED_DATA.md	1594	340f70b8356e34da9cb1d6406696b11f89e4c79ec7e8f8a82c1
 docs/RESULT_PROVENANCE.md	1330	e08e946da6a7ce81c477546efe121fc8805308a7de3cd56fbf9ff98ae40e3f9c	documentation	public package; third-party data retain original terms
 docs/VALIDATION_REPORT.md	581	7a8e464ad29efb32c2fa1bb7bc2122b17a1053689ff5636a766b1ce89549e3e8	documentation	public package; third-party data retain original terms
 environment.yml	158	b12609fe30acf0e37d787364f4e594d8911ef0b8443e83acf93e768eda4b59dc	repository metadata	public package; third-party data retain original terms
-LICENSE	1224	374d3ce59c7254a23d3c68fa9ec0685bb74d2782363e2c349033741bca92b206	repository metadata	public package; third-party data retain original terms
+LICENSE	1086	7d70bd47cedf801e33288beae91103355fcab584b3fd89a02d8b2ed309b333b6	repository metadata	public package; third-party data retain original terms
+LICENSE_NOTE.md	365	4cc08c0c2d9eaa53c4710122aebaefab76c88897b819a951f2a50ca936a5642b	repository metadata	public package; third-party data retain original terms
 manifests/SOURCE_PROVENANCE.tsv	42426	81dc94da7b08f996917b78f21b6626bc1f0dc0e7728eab791340743e4202c56e	provenance or checksum	public package; third-party data retain original terms
 pyproject.toml	866	836f6dd592c8f734c2e1d6bbaad18ae6d369fb1000d0020afe6c76fc4f94b159	repository metadata	public package; third-party data retain original terms
 r-requirements.txt	81	6084563b8e538a0010a66bba635639cc34e12e3c80461c1a1e483b9e214cb4d0	repository metadata	public package; third-party data retain original terms
-README.md	3761	3707c8b30414eefed9a26296b1a8d463295d31db76fca09b949d7e762992801c	repository metadata	public package; third-party data retain original terms
+README.md	3768	9f30d6badb122fae3173af18efbefe6b4461006244667fb9ce1c13fbbc88f398	repository metadata	public package; third-party data retain original terms
 requirements.txt	224	51a001d206f00209199c69a870efbdd4f62fb5f41ea652deeee5e1bbcfe062f8	repository metadata	public package; third-party data retain original terms
 results/figures/Figure_1_frozen_timeline_and_flow.pdf	38163	cb7a576213b84f7e697a7948dab8c907639074c7477c3dfc991ee7a2d588a68e	disclosure-safe aggregate result	public package; third-party data retain original terms
 results/figures/Figure_1_frozen_timeline_and_flow.svg	6990	b996ce06773f3401881ef13e278838db592ddffc9dcafc978b14dbc73a1c2ab9	disclosure-safe aggregate result	public package; third-party data retain original terms
